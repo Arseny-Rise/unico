@@ -1,9 +1,40 @@
 .wrapper {
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
 .container {
-	max-width: 980px;
-	margin: auto;
-	box-sizing: content-box;
+	width: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+	padding: 0 20px;
+	&._checkout {
+		max-width: 840px;
+	}
+	&._lk {
+		max-width: 768px;
+	}
+	@include max-screen($breakpoint-xxl) {
+		max-width: 1000px;
+	}
+}
+
+.main {
+	flex: 1 0 auto;
+	margin-bottom: 100px;
+	padding-top: 30px;
+	@include max-screen($breakpoint-md) {
+		margin-bottom: 80px;
+	}
+}
+
+.body {
+	&._menu-active {
+		overflow: hidden;
+	}
+	&._modals-active {
+		overflow: hidden;
+	}
 }

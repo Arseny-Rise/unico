@@ -1,0 +1,168 @@
+.footer {
+	padding-bottom: 30px;
+	background-color: $c-black;
+	color: $c-white;
+	&__grid {
+		display: grid;
+		grid-template-columns: 3fr 2fr 3fr 4fr;
+		gap: 0 20px;
+		margin-bottom: 20px;
+	}
+	&__col {
+		display: flex;
+		flex-direction: column;
+		padding: 50px 0 0 70px;
+		&:first-child {
+			padding-left: 0;
+		}
+		&._flex-between {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+	&__logo {
+		margin: 0 36px 85px 0;
+	}
+	&__menu {
+		&-link {
+			@extend .animated;
+			display: inline-block;
+			margin-bottom: 13px;
+			font-size: 14px;
+			font-weight: 400;
+			&:hover {
+				color: $c-green;
+			}
+			&._active {
+				color: $c-green;
+			}
+		}
+	}
+	&__phone {
+		@extend .animated;
+		display: inline-block;
+		margin-bottom: 0.7em;
+		font-size: 30px;
+		&:hover {
+			color: $c-green;
+		}
+	}
+	&__email {
+		@extend .animated;
+		display: inline-block;
+		margin-bottom: 2em;
+		font-weight: 400;
+		&:hover {
+			color: $c-green;
+		}
+	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__link {
+		@extend .animated;
+		display: inline-block;
+		margin-bottom: 1em;
+		color: $c-grey;
+		&:hover {
+			color: $c-green;
+		}
+		&._small {
+			font-size: 12px;
+		}
+	}
+	&__mark {
+		font-size: 10px;
+		color: $c-grey;
+	}
+	&__socs {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__soc {
+		@extend .animated;
+		margin: 0 20px 10px 0;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+	&__login-btn {
+		margin-bottom: 2em;
+		font-size: 13px;
+	}
+	@include max-screen($breakpoint-xxl) {
+		padding-top: 50px;
+		&__col {
+			padding: 0;
+			&._flex-between {
+				flex-direction: column;
+				justify-content: stretch;
+			}
+		}
+	}
+	@include max-screen($breakpoint-xl) {
+		&__grid {
+			gap: 10px 20px;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		&__logo {
+			margin-bottom: 30px;
+		}
+		&__phone {
+			color: $c-beige;
+		}
+	}
+	@include max-screen($breakpoint-l) {
+		&__grid {
+			gap: 10px 20px;
+			grid-template-columns: 1fr 1fr;
+		}
+		&__phone {
+			font-size: 25px;
+		}
+		&__recall {
+			display: none;
+		}
+	}
+	@include max-screen($breakpoint-md) {
+		&__email {
+			font-size: 13px;
+		}
+		&__phone {
+			font-size: 20px;
+		}
+		&__login-btn {
+			display: none;
+		}
+		&__col {
+			&:nth-child(1) {
+				order: 0;
+			}
+			&:nth-child(2) {
+				order: 2;
+			}
+			&:nth-child(3) {
+				order: 3;
+			}
+			&:nth-child(4) {
+				order: 1;
+			}
+		}
+	}
+	@include max-screen($breakpoint-sm) {
+		&__phone {
+			font-size: 17px;
+		}
+		&__socs {
+			justify-content: flex-end;
+		}
+		&__soc {
+			margin: 0 0 10px 20px;
+		}
+		&__link._small {
+			font-size: 8px;
+		}
+	}
+}

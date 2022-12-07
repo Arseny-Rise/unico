@@ -1,0 +1,33 @@
+.profile {
+	&__form-contacts {
+		margin-bottom: 48px;
+	}
+	&__checkbox {
+		margin-bottom: 15px;
+	}
+	&__checkbox-descr {
+		margin-bottom: 20px;
+		font-size: 13px;
+		font-weight: 300;
+		color: $c-grey-4;
+	}
+	&__phone-text {
+		margin-bottom: 29px;
+		font-size: 13px;
+		font-weight: 300;
+	}
+	&__input-phone {
+		margin-bottom: 16px;
+	}
+	@include max-screen($breakpoint-md) {
+		&__phone-text {
+			font-size: 10px;
+		}
+		&__checkbox {
+			font-size: 12px;
+			.checkbox__text::before {
+				top: 0;
+			}
+		}
+	}
+}

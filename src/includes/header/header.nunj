@@ -1,7 +1,29 @@
 {% from "../../components/menu/menu.nunj" import menu %}
+{% from "../../components/icon/icon.nunj" import icon %}
+{% from "../../components/recall/recall.nunj" import recall %}
+{% from "../../components/login-btn/login-btn.nunj" import loginBtn %}
+{% from "../../components/logo/logo.nunj" import logo %}
+{% from "../../components/burger/burger.nunj" import burger %}
 
-<div class="header">
-	<div class="container">
-		{{ menu() }}
+<header class="header">
+	<div class="container header__container">
+		<div class="header__block">
+			{{ logo({
+				className: 'header__logo _header'
+			}) }}
+			{{ menu() }}
+		</div>
+		<a href="tel:84957758233" class="header__phone">8&nbsp;495&nbsp;775 82&nbsp;33</a>
+		<div class="header__block">
+			{{ recall({
+				className: 'header__call'
+			}) }}
+			{{ loginBtn({
+				className: 'header__login-btn'
+			}) }}
+			{{ burger({
+				className: 'header__burger'
+			}) }}
+		</div>
 	</div>
-</div>
+</header>

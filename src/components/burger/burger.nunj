@@ -1,0 +1,9 @@
+{% macro burger(props) %}
+<button data-burger class="burger{% if props.className %} {{ props.className }}{% endif %}">
+	<span class="burger__inner">
+		<span class="burger__line _first"></span>
+		<span class="burger__line _second"></span>
+		<span class="burger__line _third"></span>
+	</span>
+</button>
+{% endmacro %}

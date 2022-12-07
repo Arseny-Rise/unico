@@ -1,0 +1,77 @@
+{% from "../../components/breadcrumbs/breadcrumbs.nunj" import breadcrumbs %}
+{% from "../../components/button/button.nunj" import button %}
+
+<section class="diet-first">
+	<div class="container">
+		{{ breadcrumbs({
+			className: 'diet-first__breadcrumbs',
+			array: [
+				{
+					text: 'Главная',
+					href: '/'
+				},
+				{
+					text: 'Снижение веса'
+				},
+				{
+					text: '1300 ккал'
+				}
+			]
+		})}}
+		<div class="diet-first__header">
+			<h1 class="text-head-reg diet-first__title">
+				<span>Рацион</span>
+				<span>снижение веса</span>
+			</h1>
+			<div class="diet-first__header-right">
+				<ul class="diet-first__tabs">
+					<li><button class="diet-first__tab _active" data-diet-tab type="button">1300 ккал</button></li>
+					<li><button class="diet-first__tab" data-diet-tab type="button">1500 ккал</button></li>
+					<li><button class="diet-first__tab" data-diet-tab type="button">1900 ккал</button></li>
+				</ul>
+				{{
+					button({
+						className: '_offer _green diet-first__btn',
+						children: 'Калькулятор ккал',
+						href: '#',
+						attr: 'data-modal-btn="calc"'
+					})
+				}}
+			</div>
+		</div>
+		<div class="diet-first__grid">
+			<ul class="diet-first__week">
+				<li><button class="diet-first__day">ПН <span class="diet-first__day-date">14.11</span></li>
+				<li><button class="diet-first__day">ВТ <span class="diet-first__day-date">15.11</span></li>
+				<li><button class="diet-first__day _active">СР <span class="diet-first__day-date">16.11</span></li>
+				<li><button class="diet-first__day">ЧТ <span class="diet-first__day-date">17.11</span></li>
+				<li><button class="diet-first__day">ПТ <span class="diet-first__day-date">18.11</span></li>
+				<li><button class="diet-first__day">СБ <span class="diet-first__day-date">19.11</span></li>
+				<li><button class="diet-first__day">ВС <span class="diet-first__day-date">20.11</span></li>
+			</ul>
+			<ul class="diet-first__params">
+				<li class="diet-first__param">
+					<span>ккал</span>
+					<span>1235</span>
+				</li>
+				<li class="diet-first__param">
+					<span>блюда</span>
+					<span>5</span>
+				</li>
+				<li class="diet-first__param">
+					<span>белки</span>
+					<span>73</span>
+				</li>
+				<li class="diet-first__param">
+					<span>жиры</span>
+					<span>62</span>
+				</li>
+				<li class="diet-first__param">
+					<span>углев.</span>
+					<span>103</span>
+				</li>
+			</ul>
+			{% include '../diet-slider/diet-slider.nunj' %}
+		</div>
+	</div>
+</section>

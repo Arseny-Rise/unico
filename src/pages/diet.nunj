@@ -1,0 +1,16 @@
+{% extends "../templates/base.nunj" %}
+
+{% block content %}
+
+	{% include '../includes/header/header.nunj' %}
+
+	<main class="main diet">
+		{% include '../includes/diet-first/diet-first.nunj' %}
+
+		{% include '../includes/diet-second/diet-second.nunj' %}
+
+		{% include '../includes/bg/bg.nunj' %}
+	</main>
+
+	{% include '../includes/footer/footer.nunj' %}
+{% endblock %}

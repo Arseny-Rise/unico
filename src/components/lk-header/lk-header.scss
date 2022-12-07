@@ -1,0 +1,29 @@
+.lk-header {
+	padding: 0 53px;
+	display: flex;
+	justify-content: space-between;
+	&__links {
+		display: flex;
+		align-items: center;
+	}
+	&__link {
+		@extend .animated;
+		margin-right: 30px;
+		font-weight: 400;
+		&:hover {
+			color: $c-green;
+		}
+		&._active {
+			color: $c-green;
+		}
+	}
+	@include max-screen($breakpoint-md) {
+		padding: 0px;
+	}
+	@include max-screen($breakpoint-sm) {
+		&__link {
+			margin-right: 20px;
+			font-size: 11px;
+		}
+	}
+}

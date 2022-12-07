@@ -1,0 +1,18 @@
+.modal-diet-offer {
+	max-width: 410px;
+	&._active {
+		display: flex;
+	}
+	&__title {
+		margin-bottom: 27px;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 1.3;
+	}
+	&__btn {
+		margin-bottom: 20px;
+	}
+	&__descr {
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,18 @@
+.modal-phone {
+	max-width: 410px;
+	&._active {
+		display: flex;
+	}
+	&__title {
+		margin-bottom: 25px;
+		font-size: 23px;
+	}
+	&__input {
+		padding: 10px;
+		margin-bottom: 25px;
+		font-size: 30px;
+	}
+	&__btn {
+		margin-bottom: 25px;
+	}
+}

@@ -1,0 +1,9 @@
+{% macro breadcrumbs(props) %}
+	<ul class="breadcrumbs{% if props.className %} {{ props.className }}{% endif %}">
+		{% for item in props.array %}
+			<li class="breadcrumbs__item">
+				<a class="breadcrumbs__item-link" href="{% if item.href %}{{ item.href }}{% else %}#{% endif %}">{{ item.text }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endmacro %}

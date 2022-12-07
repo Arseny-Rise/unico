@@ -1,0 +1,37 @@
+.datepicker-picker {
+	margin-top: 20px;
+	.datepicker-grid .datepicker-cell {
+		font-weight: 300;
+		font-size: 15px;
+		&.day {
+			border-radius: 50%;
+			&.prev,
+			&.next {
+				pointer-events: none;
+				opacity: 0.2;
+			}
+			&.focused {
+				background-color: transparent;
+			}
+			&.selected {
+				background-color: $c-green;
+			}
+		}
+		&.selected {
+			background-color: $c-green;
+		}
+	}
+}
+.datepicker-header .datepicker-controls .button {
+	font-size: 18px;
+	font-weight: 300;
+}
+.datepicker-view .dow {
+	font-size: 12px;
+	font-weight: 400;
+	color: $c-grey-4;
+}
+.datepicker-dropdown .datepicker-picker {
+	box-shadow: 0px 5px 15px rgba($c-black, 0.15);
+	border-radius: 5px;
+}

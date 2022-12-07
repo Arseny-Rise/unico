@@ -1,0 +1,15 @@
+{% from "../icon/icon.nunj" import icon %}
+{% macro logo(props) %}
+<a href="/" class="logo{% if props.className %} {{ props.className }}{% endif %}">
+	{{ icon({
+		iconName: 'logo-part-1',
+		attr: 'viewBox="0 0 102 25"',
+		className: 'logo__left'
+	}) }}
+	{{ icon({
+		iconName: 'logo-part-2',
+		attr: 'viewBox="0 0 93 23"',
+		className: 'logo__right'
+	}) }}
+</a>
+{% endmacro %}

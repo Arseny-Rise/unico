@@ -1,0 +1,25 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+
+<div class="modal modal-diet" data-modal="diet">
+	<div class="modal__inner modal-diet__inner">
+		<img class="modal-diet__img" src="/assets/images/diet-4.jpg" width="290" height="398" alt="">
+		<div class="modal-diet__text">
+			<p class="modal-diet__param">288 ккал 12 б 18 ж 19 у</p>
+			<p class="modal-diet__title">Филе индейки на гриле с морковным пюре</p>
+			<p class="modal-diet__weight">260 г</p>
+			<div class="modal-diet__block">
+				<p class="modal-diet__block-title">Польза здоровью:</p>
+				<p class="modal-diet__block-text">железо + витамины группы В + белок + клетчатка + поддержка пищеварения + повышение энергии</p>
+			</div>
+			<div class="modal-diet__block">
+				<p class="modal-diet__block-title">Ингредиенты:</p>
+				<p class="modal-diet__block-text">Филе индейки, морковь, молоко соевое, масло оливковое, маслины, томаты черри, соль гималайская розовая, кинза, эстрагон (тархун), петрушка, тимьян (чабрец), микрозелень.</p>
+			</div>
+		</div>
+	</div>
+	<button class="modal__exit" type="button">
+		<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M8.41425 7.00025L13.7072 1.70725C14.0982 1.31625 14.0982 0.68425 13.7072 0.29325C13.3162 -0.09775 12.6842 -0.09775 12.2933 0.29325L7.00025 5.58625L1.70725 0.29325C1.31625 -0.09775 0.68425 -0.09775 0.29325 0.29325C-0.09775 0.68425 -0.09775 1.31625 0.29325 1.70725L5.58625 7.00025L0.29325 12.2933C-0.09775 12.6842 -0.09775 13.3162 0.29325 13.7072C0.48825 13.9022 0.74425 14.0002 1.00025 14.0002C1.25625 14.0002 1.51225 13.9022 1.70725 13.7072L7.00025 8.41425L12.2933 13.7072C12.4882 13.9022 12.7443 14.0002 13.0002 14.0002C13.2562 14.0002 13.5122 13.9022 13.7072 13.7072C14.0982 13.3162 14.0982 12.6842 13.7072 12.2933L8.41425 7.00025Z"/>
+		</svg>
+	</button>
+</div>

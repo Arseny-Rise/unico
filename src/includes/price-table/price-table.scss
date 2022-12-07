@@ -1,0 +1,79 @@
+.price {
+	&__table {
+		width: 100%;
+		min-width: 800px;
+		border-collapse: collapse;
+		color: $c-dark;
+		vertical-align: middle;
+		text-align: center;
+	}
+	&__table-head {
+		border-bottom: 1px solid $c-grey-4;
+	}
+	&__table-th {
+		height: 40px;
+		font-size: 15px;
+		font-weight: 400;
+		&:nth-child(1) {
+			padding: 0 20px;
+			text-align: left;
+		}
+		&:not(:nth-child(1)) {
+			width: 100px;
+		}
+		&._hover {
+			background-color: $c-green;
+			color: $c-white;
+		}
+	}
+	&__table-body {
+		font-size: 16px;
+		font-weight: 400;
+	}
+	&__table-tr {
+		&:nth-child(even) {
+			background-color: $c-grey-3;
+		}
+	}
+	&__table-td {
+		&:not(:nth-child(1)) {
+			width: 150px;
+		}
+	}
+	&__table-td-title {
+		display: table-cell;
+		height: 50px;
+		padding: 0 20px;
+		text-align: left;
+		vertical-align: middle;
+		&._hover {
+			background-color: $c-green;
+			color: $c-white;
+		}
+	}
+	&__table-link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		min-width: 120px;
+		span {
+			margin-bottom: 2px;
+			display: inline-block;
+			&:last-child {
+				display: none;
+				font-size: 14px;
+			}
+		}
+		&:hover {
+			background-color: $c-green;
+			color: $c-white;
+			span {
+				&:last-child {
+					display: block;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,20 @@
+{% from "../exit-btn/exit-btn.nunj" import exitBtn %}
+
+{% macro lkHeader(props) %}
+	<div class="lk-header lk__header">
+		<ul class="lk-header__links">
+			{% for item in props.array %}
+				<li>
+					<a class="lk-header__link{% if item.active %} _active {% endif %}"
+						href="{% if item.href %}{{ item.href }}{% else %}#{% endif %}">
+						{{ item.text }}
+					</a>
+				</li>
+			{% endfor %}
+		</ul>
+		{{exitBtn({
+			className: 'lk-header__exit',
+			text: 'Выйти'
+		})}}
+	</div>
+{% endmacro %}

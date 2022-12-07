@@ -1,35 +1,58 @@
 .button {
-	@extend .transition-active;
+	@extend .animated;
+	@include button-reset;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border: 2px solid rgba(#000, 0.3);
-	height: 54px;
-	font-weight: 700;
-	cursor: pointer;
-	font-size: 16px;
-	letter-spacing: -0.5px;
-	padding: 1px 20px 0;
-
+	height: 40px;
+	padding: 0 30px;
+	font-weight: 400;
+	font-size: 13px;
+	border-radius: 3px;
+	background-color: $c-dark;
+	color: $c-white;
 	&:hover {
-		background-color: rgba(#000, 0.3);
-		color: rgba(#000, 0.8);
-		transition: none;
+		background-color: $c-green-dark;
 	}
-
 	&:active {
-		background-color: rgba(#000, 0.25);
-		border-color: rgba(#000, 0.25);
-
-		.button__chevron-right {
-			transform: translateX(1px);
-			transition: none;
+		opacity: 0.9;
+	}
+	&._big {
+		height: 50px;
+		font-size: 14px;
+	}
+	&._call {
+		height: 50px;
+		font-weight: 500;
+		font-size: 15px;
+	}
+	&._large {
+		height: 50px;
+		font-weight: 500;
+		font-size: 18px;
+	}
+	&._offer {
+		height: 45px;
+		font-weight: 500;
+		font-size: 14px;
+	}
+	&._diet {
+		height: 47px;
+		font-weight: 500;
+		font-size: 16px;
+	}
+	&._green {
+		background-color: $c-green-dark;
+		&:hover {
+			background-color: $c-dark;
 		}
 	}
-
-	&__chevron-right {
-		margin-left: 5px;
-		transition: transform 0.1s ease-out,
-			fill $default-transition-duration $default-transition-function;
+	&._full {
+		width: 100%;
+	}
+	@include max-screen($breakpoint-sm) {
+		&._offer {
+			font-size: 12px;
+		}
 	}
 }

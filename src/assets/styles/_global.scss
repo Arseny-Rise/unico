@@ -71,7 +71,14 @@
 .transition-active {
 	transition: color $default-transition-duration $default-transition-function,
 		background $default-transition-duration $default-transition-function,
-		border-color $default-transition-duration $default-transition-function;
+		border-color $default-transition-duration $default-transition-function,
+		stroke $default-transition-duration $default-transition-function,
+		fill $default-transition-duration $default-transition-function,
+		opacity $default-transition-duration $default-transition-function,
+		transform $default-transition-duration $default-transition-function,
+		top $default-transition-duration $default-transition-function,
+		bottom $default-transition-duration $default-transition-function,
+		box-shadow $default-transition-duration $default-transition-function;
 }
 
 .transition-hover {

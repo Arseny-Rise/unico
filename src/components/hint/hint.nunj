@@ -1,0 +1,12 @@
+{% from "../icon/icon.nunj" import icon %}
+
+{% macro hint(props) %}
+	<span class="hint{% if props.className %} {{ props.className }}{% endif %}">
+		{{icon({
+			iconName: 'hint',
+			className: 'hint__icon',
+			attr: 'style="width: 16px; height: 16px;"'
+		})}}
+		{% if props.text %} <span class="hint__text">{{ props.text }}</span>{% endif %}
+	</span>
+{% endmacro %}

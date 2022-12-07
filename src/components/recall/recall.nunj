@@ -1,0 +1,6 @@
+{% macro recall(props) %}
+	<div class="recall{% if props.className %} {{ props.className }}{% endif %}">
+		<button class="recall__btn" data-modal-btn="phone">Перезвоните мне</button>
+		<span class="recall__text">с 09:00 до 21:00</span>
+	</div>
+{% endmacro %}

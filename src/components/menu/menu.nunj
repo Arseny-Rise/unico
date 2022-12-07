@@ -1,7 +1,50 @@
-{% macro menu(active=false) %}
+{% macro menu() %}
 	<nav class="menu">
-		{% for item in menuItems %}
-			<a href="{{ item.path }}" class="menu__item{% if item.id == activeItem %} _active{% endif %}" style="margin-right: 15px;">{{ item.name }}</a>
-		{% endfor %}
+		<ul class="menu__list">
+			<li class="menu__item _rations">
+				<a href="/diet.html" class="menu__link">Рационы</a>
+				<ul class="menu__submenu">
+					<li><a class="menu__submenu-link" href="/diet.html">Снижение веса</a></li>
+					<li><a class="menu__submenu-link" href="/diet.html">Перезагрузка</a></li>
+					<li><a class="menu__submenu-link" href="/diet.html">Баланс</a></li>
+					<li><a class="menu__submenu-link" href="/diet.html">КЕТО</a></li>
+					<li><a class="menu__submenu-link" href="/diet.html">Детокс</a></li>
+				</ul>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link">Доставка и оплата</a>
+				<ul class="menu__submenu">
+					<li><a class="menu__submenu-link" href="#">Снижение веса</a></li>
+					<li><a class="menu__submenu-link" href="#">Перезагрузка</a></li>
+					<li><a class="menu__submenu-link" href="#">Баланс</a></li>
+					<li><a class="menu__submenu-link" href="#">КЕТО</a></li>
+					<li><a class="menu__submenu-link" href="#">Детокс</a></li>
+				</ul>
+			</li>
+			<li class="menu__item">
+				<a href="#" class="menu__link">О компании</a>
+				<ul class="menu__submenu">
+					<li><a class="menu__submenu-link" href="#">Снижение веса</a></li>
+					<li><a class="menu__submenu-link" href="#">Перезагрузка</a></li>
+					<li><a class="menu__submenu-link" href="#">Баланс</a></li>
+					<li><a class="menu__submenu-link" href="#">КЕТО</a></li>
+					<li><a class="menu__submenu-link" href="#">Детокс</a></li>
+				</ul>
+			</li>
+			<li class="menu__item">
+				<a href="/price.html" class="menu__link">Прайс</a>
+				<ul class="menu__submenu">
+					<li><a class="menu__submenu-link" href="/price.html">Снижение веса</a></li>
+					<li><a class="menu__submenu-link" href="/price.html">Перезагрузка</a></li>
+					<li><a class="menu__submenu-link" href="/price.html">Баланс</a></li>
+					<li><a class="menu__submenu-link" href="/price.html">КЕТО</a></li>
+					<li><a class="menu__submenu-link" href="/price.html">Детокс</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="menu__bottom">
+			<a href="mailto:service@unicodiet.ru">service@unicodiet.ru</a>
+			<p>с 09:00 до 21:00</p>
+		</div>
 	</nav>
 {% endmacro %}

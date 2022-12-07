@@ -1,0 +1,15 @@
+<div class="modals">
+	{% include '../modal-in/modal-in.nunj' %}
+
+	{% include '../modal-phone/modal-phone.nunj' %}
+
+	{% include '../modal-diet/modal-diet.nunj' %}
+
+	{% include '../modal-calc/modal-calc.nunj' %}
+
+	{% include '../modal-diet-offer/modal-diet-offer.nunj' %}
+
+	{% include '../modal-address/modal-address.nunj' %}
+
+	<div class="modals__bg"></div>
+</div>

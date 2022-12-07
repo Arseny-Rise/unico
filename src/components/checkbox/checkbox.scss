@@ -1,0 +1,48 @@
+.checkbox {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	user-select: none;
+	cursor: pointer;
+	font-size: 14px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	input {
+		display: none;
+		&:checked {
+			~ .checkbox__text {
+				&::before {
+					border: 1px solid $c-green;
+					background-color: $c-green;
+				}
+			}
+		}
+	}
+	&__text {
+		position: relative;
+		padding-left: 26px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 1px;
+			left: 0;
+			height: 16px;
+			width: 16px;
+			background-color: transparent;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 10px;
+			background-image: url('../images/ok.svg');
+			border: 1px solid $c-grey-4;
+			border-radius: 4px;
+		}
+	}
+	&:hover {
+		.checkbox__text {
+			&::before {
+				border-color: $c-green;
+			}
+		}
+	}
+}

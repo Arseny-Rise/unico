@@ -1,0 +1,63 @@
+<section class="benefits home__benefits">
+	<div class="container benefits__container">
+		<div class="benefits__inner">
+			<div class="benefits__gap">
+				<h2 class="text-head-lg benefits__title">Откройте для себя преимущества UNICO!</h2>
+				<p class="benefits__descr">Правильное питание на любой вкус, образ жизни и диетические потребности</p>
+			</div>
+			<div class="benefits__body">
+				<ul class="benefits__items">
+					<li class="benefits__item">
+						{{ icon({
+							iconName: 'ben2-1',
+							attr: 'style="width: 48px; height: 44px;"',
+							className: 'benefits__item-icon'
+						})}}
+						<p class="benefits__item-text">Повышается работоспособность</p>
+					</li>
+					<li class="benefits__item">
+						{{ icon({
+							iconName: 'ben2-2',
+							attr: 'style="width: 42px; height: 48px;"',
+							className: 'benefits__item-icon'
+						})}}
+						<p class="benefits__item-text">Улучшается пищеварение</p>
+					</li>
+					<li class="benefits__item">
+						{{ icon({
+							iconName: 'ben2-3',
+							attr: 'style="width: 48px; height: 48px;"',
+							className: 'benefits__item-icon'
+						})}}
+						<p class="benefits__item-text">Улучшается деятельность мозга</p>
+					</li>
+					<li class="benefits__item">
+						{{ icon({
+							iconName: 'ben2-4',
+							attr: 'style="width: 48px; height: 48px;"',
+							className: 'benefits__item-icon'
+						})}}
+						<p class="benefits__item-text">Повышается иммунитет</p>
+					</li>
+					<li class="benefits__item">
+						{{ icon({
+							iconName: 'ben2-5',
+							attr: 'style="width: 44px; height: 48px;"',
+							className: 'benefits__item-icon'
+						})}}
+						<p class="benefits__item-text">Улучшается состояние кожи</p>
+					</li>
+					<li class="benefits__item">
+						{{ icon({
+							iconName: 'ben2-6',
+							attr: 'style="width: 50px; height: 42px;"',
+							className: 'benefits__item-icon'
+						})}}
+						<p class="benefits__item-text">Улучшается сон</p>
+					</li>
+				</ul>
+				<img src="/assets/images/benefits.png" class="benefits__image" width="400" height="450" alt="">
+			</div>
+		</div>
+	</div>
+</section>

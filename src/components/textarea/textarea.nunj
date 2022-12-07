@@ -1,0 +1,14 @@
+{% macro textarea(props) %}
+<label class="textarea{% if props.className %} {{ props.className }}{% endif %}">
+	{% if props.title %}
+		<span class="textarea__title">{{ props.title }}</span>
+	{% endif %}
+	<textarea
+		class="textarea__general{% if props.classNameTextarea %} {{ props.classNameInput }}{% endif %}"
+		{% if props.placeholder %} placeholder="{{ props.placeholder }}"{% endif %}
+		{% if props.value %} value="{{ props.value }}"{% endif %}
+		{% if props.required %} required {% endif %}
+		{% if props.attr %} {{ props.attr }}{% endif %}
+	>{% if props.text %}{{ props.text }}{% endif %}</textarea>
+</label>
+{% endmacro %}

@@ -1,0 +1,132 @@
+.diet-range {
+	display: flex;
+	align-items: flex-end;
+	&__nums {
+		margin-right: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__nums-text {
+		margin-bottom: 8px;
+		font-size: 10px;
+		font-weight: 400;
+		color: $c-grey;
+	}
+	&__nums-inner {
+		width: 53px;
+		height: 36px;
+		background-color: $c-dark;
+		border-radius: 5px;
+		text-align: center;
+		overflow: hidden;
+	}
+	&__nums-items {
+		@extend .animated;
+		display: flex;
+		flex-direction: column;
+		transform: translateY(0px);
+	}
+	&__nums-item {
+		height: 36px;
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 36px;
+		color: $c-white;
+	}
+	&__slider {
+		margin-bottom: 15px;
+		flex-grow: 1;
+		height: 3px;
+		border: none;
+		&.noUi-target {
+			box-shadow: none;
+			background: none;
+		}
+		.noUi-handle {
+			box-shadow: none;
+			&::before,
+			&::after {
+				display: none;
+			}
+		}
+		.noUi-connects {
+			background: $c-grey;
+		}
+		.noUi-connect {
+			background: $c-dark;
+		}
+		.noUi-handle {
+			height: 30px;
+			width: 30px;
+			top: -13px;
+			right: -15px;
+			border-radius: 50%;
+			border: 3px solid $c-white;
+			background-color: $c-dark;
+			box-shadow: 0px 5px 10px rgba($c-black, 0.2);
+			cursor: grab;
+			&.noUi-active {
+				cursor: grabbing;
+			}
+		}
+		.noUi-tooltip {
+			border: none;
+			font-size: 20px;
+			font-weight: 300;
+		}
+	}
+	&__slider-count {
+		position: absolute;
+		top: -43px;
+		right: -11px;
+		font-size: 20px;
+		font-weight: 300;
+		&._start {
+			display: none;
+		}
+	}
+	@include max-screen($breakpoint-xxl) {
+		display: block;
+		&__nums {
+			display: none;
+		}
+		&__slider-count {
+			position: static;
+			&._start {
+				display: block;
+			}
+			&._all {
+				order: 4;
+			}
+		}
+		&__slider {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			z-index: 0;
+		}
+		.noUi-handle {
+			height: 16px;
+			width: 16px;
+			top: -6px;
+			right: -8px;
+			border: none;
+		}
+		.noUi-tooltip {
+			bottom: 160%;
+			padding: 10px;
+			font-size: 13px;
+			font-weight: 400;
+			border-radius: 5px;
+			background-color: $c-dark;
+			color: $c-white;
+			&::before {
+				content: 'Дней: ';
+			}
+		}
+		.noUi-base {
+			width: calc(100% - 60px);
+		}
+	}
+}

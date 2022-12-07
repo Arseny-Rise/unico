@@ -1,0 +1,24 @@
+{% from "../../components/button/button.nunj" import button %}
+{% from "../../components/textarea/textarea.nunj" import textarea %}
+{% from "../../components/icon/icon.nunj" import icon %}
+
+<p class="profile__title">Мои адреса</p>
+<form class="profile-address profile__address" action="#">
+	<button class="profile__address-delete">
+		{{icon({
+			iconName: 'exit-address',
+			attr: 'style="width: 13px; height: 13px;"'
+		})}}
+		Удалить адрес
+	</button>
+	{{textarea({
+			title: 'Домашний',
+			className: 'profile__textarea',
+			text: 'Россия, Московская область, Одинцовский городской округ, рабочий посёлок Заречье, Университетская улица, 1 , подъезд 4 , квартира 124 , этаж 2'
+	})}}
+	{{button({
+		className: '_green profile__btn profile__address-btn',
+		children: 'Добавить адрес',
+		attr: 'data-modal-btn="address"'
+	})}}
+</form>

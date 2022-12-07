@@ -1,0 +1,117 @@
+{% extends "../templates/base.nunj" %}
+
+{% from "../components/lk-header/lk-header.nunj" import lkHeader %}
+
+{% block content %}
+
+	{% include '../includes/header/header.nunj' %}
+
+	<main class="main lk orders">
+		<div class="container _lk">
+			{{lkHeader({
+				array: [
+					{
+						text: 'Профиль',
+						href: '/profile.html'
+					},
+					{
+						text: 'Заказы',
+						href: '/orders.html',
+						active: true
+					},
+					{
+						text: 'Пригласить друга',
+						href: '/friend.html'
+					}
+				]
+			})}}
+			<div class="lk__body">
+				<ul class="orders__grid">
+					<li class="orders__item">
+						<span class="orders__top">
+							<p class="orders__item-title">Заказ <span>№271</span></p>
+							<p class="orders__item-date">16 августа 2022</p>
+						</span>
+						<ul class="orders__list">
+							<li class="orders__list-item">
+								<p>Снижение веса</p><p>1 300 ккал</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Длительность</p><p>3 дня</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Цена</p><p>3 800 ₽</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Первая доставка</p><p>24.08.22</p>
+							</li>
+						</ul>
+					</li>
+					<li class="orders__item">
+						<span class="orders__top">
+							<p class="orders__item-title">Заказ <span>№271</span></p>
+							<p class="orders__item-date">16 августа 2022</p>
+						</span>
+						<ul class="orders__list">
+							<li class="orders__list-item">
+								<p>Снижение веса</p><p>1 300 ккал</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Длительность</p><p>3 дня</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Цена</p><p>3 800 ₽</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Первая доставка</p><p>24.08.22</p>
+							</li>
+						</ul>
+					</li>
+					<li class="orders__item">
+						<span class="orders__top">
+							<p class="orders__item-title">Заказ <span>№271</span></p>
+							<p class="orders__item-date">16 августа 2022</p>
+						</span>
+						<ul class="orders__list">
+							<li class="orders__list-item">
+								<p>Снижение веса</p><p>1 300 ккал</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Длительность</p><p>3 дня</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Цена</p><p>3 800 ₽</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Первая доставка</p><p>24.08.22</p>
+							</li>
+						</ul>
+					</li>
+					<li class="orders__item">
+						<span class="orders__top">
+							<p class="orders__item-title">Заказ <span>№271</span></p>
+							<p class="orders__item-date">16 августа 2022</p>
+						</span>
+						<ul class="orders__list">
+							<li class="orders__list-item">
+								<p>Снижение веса</p><p>1 300 ккал</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Длительность</p><p>3 дня</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Цена</p><p>3 800 ₽</p>
+							</li>
+							<li class="orders__list-item">
+								<p>Первая доставка</p><p>24.08.22</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+
+	{% include '../includes/footer/footer.nunj' %}
+
+{% endblock %}

@@ -1,0 +1,30 @@
+.advantages {
+	&__grid {
+		padding-bottom: 80px;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 0px 20px;
+		border-bottom: 1px solid $c-grey;
+	}
+	&__item {
+		padding: 0 10px 0 25px;
+	}
+	&__text {
+		color: $c-dark;
+		line-height: 20px;
+	}
+	&__icon-wrap {
+		display: flex;
+		align-items: flex-end;
+		height: 60px;
+		margin-bottom: 1.4em;
+	}
+	@include max-screen($breakpoint-xxl) {
+		&__item {
+			padding: 0 10px;
+		}
+	}
+	@include max-screen($breakpoint-xl) {
+		display: none;
+	}
+}

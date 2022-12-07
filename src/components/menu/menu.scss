@@ -1,0 +1,120 @@
+.menu {
+	&__list {
+		display: flex;
+	}
+	&__item {
+		@extend .animated;
+		position: relative;
+		&:hover {
+			.menu__link {
+				color: $c-green;
+			}
+			.menu__submenu {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		&._active {
+			color: $c-green;
+		}
+	}
+	&__link {
+		padding: 5px 10px;
+		font-weight: 400;
+	}
+	&__submenu {
+		@extend .animated;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		padding: 26px 0 10px;
+		background-color: $c-header-bg;
+		opacity: 0;
+		visibility: hidden;
+	}
+	&__submenu-link {
+		display: block;
+		width: 100%;
+		padding: 0 26px;
+		font-size: 14px;
+		line-height: 30px;
+		white-space: nowrap;
+		&:hover {
+			background-color: $c-green-dark;
+		}
+	}
+	&__bottom {
+		display: none;
+	}
+	@include max-screen($breakpoint-xl) {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		height: 100%;
+		min-height: calc(100vh - 50px);
+		width: 100%;
+		padding: 14px 20px 40px;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		background-color: $c-header-bg;
+		border-top: 1px solid $c-green-dark;
+		transform: translateX(-100%);
+		z-index: 1;
+		&__list {
+			margin-bottom: 1em;
+			flex-direction: column;
+			align-items: flex-start;
+		}
+		&__link {
+			padding: 11px 0;
+			display: inline-block;
+			font-size: 15px;
+			color: $c-grey-4;
+		}
+		&__submenu {
+			display: none;
+		}
+		&__bottom {
+			display: flex;
+			justify-content: space-between;
+			font-size: 13px;
+			font-weight: 400;
+		}
+		&__item {
+			&._rations {
+				margin-bottom: 50px;
+				.menu__link {
+					display: none;
+				}
+				.menu__submenu {
+					padding: 0;
+					display: block;
+					position: static;
+					opacity: 1;
+					visibility: visible;
+				}
+				.menu__submenu-link {
+					padding: 6px 0;
+					font-size: 17px;
+					&:hover {
+						color: $c-green;
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
+	@include max-screen($breakpoint-l) {
+		transition: transform $default-transition-duration $default-transition-function;
+	}
+}
+.body {
+	&._menu-active {
+		.menu {
+			transform: translateX(0px);
+		}
+	}
+}

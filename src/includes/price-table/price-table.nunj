@@ -1,0 +1,359 @@
+<table class="price-table price__table">
+	<thead class="price__table-head">
+		<tr class="price__table-head-tr">
+			<th class="price__table-th">Рацион</th>
+			<th class="price__table-th">1 день</th>
+			<th class="price__table-th">5 дней</th>
+			<th class="price__table-th">7 дней</th>
+			<th class="price__table-th">14 дней</th>
+			<th class="price__table-th">20 дней</th>
+			<th class="price__table-th">30 дней</th>
+		</tr>
+	</thead>
+	<tbody class="price__table-body">
+		<tr class="price__table-tr">
+			<td class="price__table-td">
+				<p class="price__table-td-title">
+					Снижение 1300
+				</p>
+				</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+		</tr>
+		<tr class="price__table-tr">
+			<td class="price__table-td">
+				<p class="price__table-td-title">
+					Снижение 1500
+				</p>
+				</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+		</tr>
+		<tr class="price__table-tr">
+			<td class="price__table-td">
+				<p class="price__table-td-title">
+					Баланс 1800
+				</p>
+				</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+		</tr>
+		<tr class="price__table-tr">
+			<td class="price__table-td">
+				<p class="price__table-td-title">
+					Баланс 2100
+				</p>
+				</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+		</tr>
+		<tr class="price__table-tr">
+			<td class="price__table-td">
+				<p class="price__table-td-title">
+					КЕТО 1500
+				</p>
+				</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+		</tr>
+		<tr class="price__table-tr">
+			<td class="price__table-td">
+				<p class="price__table-td-title">
+					КЕТО 2000
+				</p>
+				</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+		</tr>
+		<tr class="price__table-tr">
+			<td class="price__table-td">
+				<p class="price__table-td-title">
+					Перезагрузка 1300
+				</p>
+				</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+		</tr>
+		<tr class="price__table-tr">
+			<td class="price__table-td">
+				<p class="price__table-td-title">
+					Детокс 1000
+				</p>
+				</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+			<td class="price__table-td">
+				<a class="price__table-link" href="#">
+					<span>2 600 ₽</span>
+					<span>Заказать</span>
+				</a>
+			</td>
+		</tr>
+	</tbody>
+</table>

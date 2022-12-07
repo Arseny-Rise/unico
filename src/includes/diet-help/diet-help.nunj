@@ -1,0 +1,17 @@
+{% from "../../components/button/button.nunj" import button %}
+
+<div class="diet-help__inner">
+	<img class="diet-help__img" width="185" height="185" src="/assets/images/diet-3.jpg" alt="" >
+	<div class="diet-help__text">
+		<p class="text-head-sm diet-help__title">Нужна помощь?</p>
+		<p class="diet-help__descr">Заказать консультацию, узнать подробнее или заказать рацион питания от Юлии Высоцкой</p>
+		<a href="tel:+74952550232" class="diet-help__phone">+7 495 255 02 32</a>
+		{{
+			button({
+				className: '_offer _green diet-help__btn',
+				children: 'Заказать звонок',
+				attr: 'data-modal-btn="phone"'
+			})
+		}}
+	</div>
+</div>

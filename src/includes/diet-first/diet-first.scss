@@ -1,0 +1,202 @@
+.diet-first {
+	&__header {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid $c-grey;
+	}
+	&__header-right {
+		display: flex;
+		align-items: center;
+	}
+	&__btn {
+		margin-left: 50px;
+	}
+	&__breadcrumbs {
+		margin-bottom: 24px;
+	}
+	&__tabs {
+		display: flex;
+		align-items: center;
+	}
+	&__tab {
+		@include button-reset;
+		@extend .animated;
+		position: relative;
+		margin-right: 30px;
+		font-weight: 300;
+		font-size: 20px;
+		color: $c-grey-4;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -3px;
+			left: 0;
+			height: 1px;
+			width: 0;
+			background-color: $c-dark;
+			transition: width $default-transition-duration $default-transition-function;
+		}
+		&:hover {
+			color: $c-dark;
+			&::before {
+				width: 100%;
+			}
+		}
+		&._active {
+			color: $c-dark;
+			&::before {
+				width: 100%;
+			}
+		}
+	}
+	&__grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+	&__week {
+		display: flex;
+		flex-grow: 1;
+		li:last-child {
+			.diet-first__day {
+				margin-right: 0;
+			}
+		}
+	}
+	&__day {
+		@include button-reset;
+		@extend .animated;
+		padding-bottom: 15px;
+		margin-right: 18px;
+		border-bottom: 1px solid transparent;
+		text-transform: uppercase;
+		font-size: 17px;
+		color: $c-grey-4;
+		cursor: pointer;
+		&:hover {
+			border-bottom-color: $c-black;
+		}
+		&._active {
+			border-bottom-color: $c-black;
+			color: $c-black;
+			cursor: default;
+			.diet-first__day-date {
+				display: inline-block;
+			}
+		}
+	}
+	&__day-date {
+		display: none;
+	}
+	&__params {
+		display: flex;
+		justify-content: flex-end;
+		flex-grow: 1;
+	}
+	&__param {
+		margin-left: 20px;
+		display: flex;
+		flex-direction: column;
+		span {
+			text-align: center;
+			font-weight: 400;
+			&:first-child {
+				margin-bottom: 10px;
+				font-size: 10px;
+				color: $c-grey-4;
+			}
+			&:last-child {
+				font-size: 14px;
+				color: $c-dark;
+			}
+		}
+	}
+	&__title {
+		span {
+			&:first-child {
+				text-transform: lowercase;
+			}
+			&:last-child {
+				text-transform: uppercase;
+			}
+		}
+	}
+	@include max-screen($breakpoint-xxl) {
+		&__btn._offer {
+			position: absolute;
+			top: -52px;
+			right: 0;
+			height: 38px;
+			padding: 0 16px;
+			font-size: 15px;
+		}
+		&__breadcrumbs {
+			margin-bottom: 27px;
+		}
+		&__tab {
+			margin: 0 0 0 30px;
+			&::before {
+				content: none;
+			}
+		}
+		&__block._second {
+			padding: 70px 0 30px;
+		}
+	}
+	@include max-screen($breakpoint-xl) {
+		&__header {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__tab {
+			margin: 0 30px 0 0;
+		}
+		&__btn {
+			display: none;
+		}
+	}
+	@include max-screen($breakpoint-l) {
+		&__params {
+			justify-content: flex-start;
+			order: 3;
+		}
+		&__params {
+			justify-content: space-between;
+			padding: 10px;
+			background-color: $c-grey-3;
+			border-radius: 5px;
+		}
+		&__param {
+			margin-left: 0;
+		}
+	}
+	@include max-screen($breakpoint-md) {
+	}
+	@include max-screen($breakpoint-sm) {
+		&__header {
+			margin-bottom: 20px;
+		}
+		&__breadcrumbs {
+			margin-bottom: 17px;
+		}
+		&__title {
+			margin-bottom: 20px;
+			font-size: 20px;
+		}
+		&__tab {
+			margin-right: 10px;
+			font-size: 13px;
+		}
+		&__day {
+			font-size: 13px;
+		}
+	}
+}

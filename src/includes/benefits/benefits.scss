@@ -1,0 +1,112 @@
+.benefits {
+	&__gap {
+		margin-left: 64px;
+	}
+	&__title {
+		margin-bottom: 10px;
+	}
+	&__descr {
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+	&__body {
+		position: relative;
+		display: flex;
+		padding: 34px 0;
+		justify-content: space-between;
+		background-color: $c-grey-3;
+		border-radius: 10px;
+	}
+	&__items {
+		width: 62%;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 40px 20px;
+	}
+	&__item {
+		padding-left: 64px;
+	}
+	&__item-icon {
+		margin-bottom: 16px;
+		height: 50px !important;
+	}
+	&__item-text {
+		max-width: 150px;
+		line-height: 21px;
+	}
+	&__image {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		height: auto;
+		object-fit: contain;
+	}
+	@include max-screen($breakpoint-xxl) {
+		&__item {
+			padding-left: 30px;
+		}
+	}
+	@include max-screen($breakpoint-xl) {
+		&__gap {
+			margin-left: 0;
+			text-align: center;
+		}
+		&__inner {
+			padding-top: 40px;
+			padding-bottom: 10px;
+			border-radius: 5px;
+			background-color: $c-grey-3;
+		}
+		&__image {
+			display: none;
+		}
+		&__items {
+			width: 70%;
+			gap: 30px;
+		}
+		&__item {
+			padding-left: 0;
+		}
+		&__title {
+			font-size: 30px;
+		}
+		&__body {
+			justify-content: center;
+		}
+	}
+	@include max-screen($breakpoint-l) {
+		&__inner {
+			padding-top: 0;
+			background-color: transparent;
+		}
+		&__body {
+			background-color: transparent;
+		}
+		&__items {
+			width: 100%;
+		}
+		&__item {
+			padding: 0;
+		}
+		&__item-text {
+			max-width: none;
+		}
+		&__descr {
+			font-size: 13px;
+		}
+		&__gap {
+			text-align: left;
+		}
+	}
+	@include max-screen($breakpoint-md) {
+		&__title {
+			font-size: 20px;
+		}
+		&__items {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&__item-text {
+			font-size: 13px;
+		}
+	}
+}

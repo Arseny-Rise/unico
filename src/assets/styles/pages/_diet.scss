@@ -1,0 +1,10 @@
+.diet {
+	&__range {
+		margin-bottom: 44px;
+	}
+	@include max-screen($breakpoint-sm) {
+		&__range {
+			margin-bottom: 30px;
+		}
+	}
+}

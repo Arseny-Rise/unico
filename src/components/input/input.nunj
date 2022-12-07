@@ -1,0 +1,16 @@
+{% macro input(props) %}
+<label class="input{% if props.disabled %} _disabled {% endif %}{% if props.className %} {{ props.className }}{% endif %}">
+	{% if props.title %}
+		<span class="input__title">{{ props.title }}</span>
+	{% endif %}
+	<input
+		class="input__general{% if props.classNameInput %} {{ props.classNameInput }}{% endif %}"
+		type="{% if props.type %}{{ props.type }}{% else %}text{% endif %}"
+		{% if props.placeholder %} placeholder="{{ props.placeholder }}"{% endif %}
+		{% if props.value %} value="{{ props.value }}"{% endif %}
+		{% if props.required %} required {% endif %}
+		{% if props.attr %} {{ props.attr }}{% endif %}
+		{% if props.disabled %} disabled {% endif %}
+	>
+</label>
+{% endmacro %}

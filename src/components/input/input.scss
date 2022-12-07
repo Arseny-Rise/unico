@@ -1,0 +1,45 @@
+.input {
+	display: inline-block;
+	width: 100%;
+	&__title {
+		display: inline-block;
+		margin-bottom: 14px;
+		font-size: 13px;
+		font-weight: 400;
+		color: $c-grey-4;
+	}
+	&__general {
+		padding-bottom: 8px;
+		width: 100%;
+		font-size: 16px;
+		color: $c-black;
+		border: none;
+		outline: none;
+		border-bottom: 1px solid #000;
+		background-color: inherit;
+		&::placeholder {
+			color: $c-black;
+		}
+		@include autofill-color;
+	}
+	&._disabled {
+		.input__general {
+			color: $c-grey-4;
+			border-bottom-color: $c-grey-4;
+		}
+	}
+	&._error {
+		.input__general {
+			border-bottom-color: $c-red;
+		}
+	}
+	@include max-screen($breakpoint-sm) {
+		&__title {
+			margin-bottom: 10px;
+			font-size: 10px;
+		}
+		&__general {
+			font-size: 14px;
+		}
+	}
+}

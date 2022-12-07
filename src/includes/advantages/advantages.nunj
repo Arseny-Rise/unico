@@ -1,0 +1,50 @@
+<section class="advantages home__advantages">
+	<div class="container">
+		<ul class="advantages__grid">
+			<li class="advantages__item">
+				<div class="advantages__icon-wrap">
+					{{ icon({
+						iconName: 'ben-1',
+						attr: 'viewBox="0 0 46 60" style="width: 46px; height: 60px;"',
+						className: 'advantages__item-icon'
+					})}}
+				</div>
+				<p class="advantages__text">Сделано с&nbsp;любовью! Из&nbsp;премиальных и&nbsp;сезонных продуктов				</p>
+			</li>
+			<li class="advantages__item">
+				<div class="advantages__icon-wrap">
+					{{ icon({
+						iconName: 'ben-2',
+						attr: 'viewBox="0 0 42 60" style="width: 42px; height: 60px;"',
+						className: 'advantages__item-icon'
+					})}}
+				</div>
+				<p class="advantages__text">Каждое блюдо разработано диетологом-эндокринолом с&nbsp;медицинским подходом</p>
+			</li>
+			<li class="advantages__item">
+				<div class="advantages__icon-wrap">
+					{{ icon({
+						iconName: 'ben-3',
+						attr: 'viewBox="0 0 51 50" style="width: 51px; height: 50px;"',
+						className: 'advantages__item-icon'
+					})}}
+				</div>
+				<p class="advantages__text">
+					Вдохновим и&nbsp;поддержим Вас на&nbsp;пути к&nbsp;правильному питанию
+				</p>
+			</li>
+			<li class="advantages__item">
+				<div class="advantages__icon-wrap">
+					{{ icon({
+						iconName: 'ben-4',
+						attr: 'viewBox="0 0 61 60" style="width: 61px; height: 60px;"',
+						className: 'advantages__item-icon'
+					})}}
+				</div>
+				<p class="advantages__text">
+					Более 300 блюд в&nbsp;меню с&nbsp;суперфудами без повторов в&nbsp;течение 21&nbsp;дня
+				</p>
+			</li>
+		</ul>
+	</div>
+</section>

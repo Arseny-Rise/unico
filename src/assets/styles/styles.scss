@@ -1,17 +1,68 @@
 // ======= GLOBAL =======
 @import 'constants';
 @import 'lib/base';
+@import 'lib/_flickity.min';
+@import 'lib/nouislider.min';
+@import 'lib/datepicker.min';
+@import 'datepicker-custom';
 @import 'fonts';
 @import 'reset';
 @import 'global';
 @import 'layout';
+@import 'typography';
 // @import 'controls';
 
 // ======= COMPONENTS =======
 @import '../../components/button/button';
+@import '../../components/menu/menu';
+@import '../../components/recall/recall';
+@import '../../components/login-btn/login-btn';
+@import '../../components/logo/logo';
+@import '../../components/burger/burger';
+@import '../../components/breadcrumbs/breadcrumbs';
+@import '../../components/switch/switch';
+@import '../../components/input/input';
+@import '../../components/select/select';
+@import '../../components/radio/radio';
+@import '../../components/hint/hint';
+@import '../../components/textarea/textarea';
+@import '../../components/exit-btn/exit-btn';
+@import '../../components/checkbox/checkbox';
+@import '../../components/lk-header/lk-header';
 
 // ======= INCLUDES =======
 @import '../../includes/header/header';
+@import '../../includes/footer/footer';
+@import '../../includes/first-slider/first-slider';
+@import '../../includes/advantages/advantages';
+@import '../../includes/ration/ration';
+@import '../../includes/map/map';
+@import '../../includes/benefits/benefits';
+@import '../../includes/recipes/recipes';
+@import '../../includes/bg/bg';
+@import '../../includes/diet-first/diet-first';
+@import '../../includes/diet-second/diet-second';
+@import '../../includes/diet-slider/diet-slider';
+@import '../../includes/diet-help/diet-help';
+@import '../../includes/diet-range/diet-range';
+@import '../../includes/modals/modals';
+@import '../../includes/modal-diet/modal-diet';
+@import '../../includes/modal-in/modal-in';
+@import '../../includes/modal-phone/modal-phone';
+@import '../../includes/modal-calc/modal-calc';
+@import '../../includes/modal-diet-offer/modal-diet-offer';
+@import '../../includes/checkout-date/checkout-date';
+@import '../../includes/modal-address/modal-address';
+@import '../../includes/price-table/price-table';
+@import '../../includes/profile-address/profile-address';
+@import '../../includes/profile-form-contacts/profile-form-contacts';
 
 // ======= PAGES =======
 @import 'pages/main';
+@import 'pages/diet';
+@import 'pages/checkout';
+@import 'pages/lk';
+@import 'pages/profile';
+@import 'pages/orders';
+@import 'pages/friend';
+@import 'pages/price';

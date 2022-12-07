@@ -1,0 +1,42 @@
+{% extends "../templates/base.nunj" %}
+
+{% from "../components/button/button.nunj" import button %}
+{% from "../components/input/input.nunj" import input %}
+{% from "../components/textarea/textarea.nunj" import textarea %}
+{% from "../components/icon/icon.nunj" import icon %}
+{% from "../components/checkbox/checkbox.nunj" import checkbox %}
+{% from "../components/lk-header/lk-header.nunj" import lkHeader %}
+
+{% block content %}
+
+	{% include '../includes/header/header.nunj' %}
+
+	<main class="main lk profile">
+		<div class="container _lk">
+			{{lkHeader({
+				array: [
+					{
+						text: 'Профиль',
+						href: '/profile.html',
+						active: true
+					},
+					{
+						text: 'Заказы',
+						href: '/orders.html'
+					},
+					{
+						text: 'Пригласить друга',
+						href: '/friend.html'
+					}
+				]
+			})}}
+			<div class="lk__body">
+				{% include '../includes/profile-form-contacts/profile-form-contacts.nunj' %}
+				{% include '../includes/profile-address/profile-address.nunj' %}
+			</div>
+		</div>
+	</main>
+
+	{% include '../includes/footer/footer.nunj' %}
+
+{% endblock %}

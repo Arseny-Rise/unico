@@ -1,0 +1,28 @@
+<section class="map home__map">
+	<div class="container">
+		<div class="map__blocks">
+			<div class="map__block">
+				<div class="map__general" data-home-map>
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa564ace8cce654d13b0536b2bc4c8df8e50b80f81fd8e3e8892aa5d49fa40717&source=constructor" width="640" height="320" frameborder="0"></iframe>
+				</div>
+			</div>
+			<div class="map__block">
+				<h2 class="text-head-lg map__title">Самая пунктуальная доставка</h2>
+				<p class="map__descr">Если заказ оформлен и&nbsp;оплачен до&nbsp;14:00, ближайшая доставка утром следующего дня</p>
+				<ul class="map__params">
+					<li class="map__param">
+						<p class="map__param-title">Бесплатно</p>
+						<p class="map__param-text">Москва и&nbsp;10&nbsp;км от&nbsp;МКАД</p>
+						<p class="map__param-text _small">часовой интервал с&nbsp;06:00 до&nbsp;12:00</p>
+					</li>
+					<li class="map__param">
+						<p class="map__param-title">300&nbsp;₽</p>
+						<p class="map__param-text">11&nbsp;&mdash; 29&nbsp;км от&nbsp;МКАД</p>
+						<p class="map__param-text _small">2&nbsp;часовой интервал с&nbsp;06:00 до&nbsp;12:00</p>
+					</li>
+				</ul>
+				<p class="map__descr _dark">Более 30&nbsp;км от&nbsp;МКАД согласуем индивидуально</p>
+			</div>
+		</div>
+	</div>
+</section>

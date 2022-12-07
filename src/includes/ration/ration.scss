@@ -1,0 +1,98 @@
+.ration {
+	overflow: hidden;
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 27px;
+		padding-bottom: 40px;
+	}
+	&__item {
+		box-shadow: 0px 4px 35px rgba($c-black, 0.15);
+		border-radius: 5px;
+		background-color: $c-white;
+		transition: box-shadow $default-transition-duration $default-transition-function;
+		&:hover {
+			box-shadow: none;
+		}
+	}
+	&__body {
+		padding: 15px 9.8% 20px;
+	}
+	&__title {
+		margin-bottom: 15px;
+		font-size: 18px;
+	}
+	&__text {
+		margin-bottom: 14px;
+		color: $c-dark;
+		line-height: 20px;
+		font-size: 14px;
+	}
+	&__btn {
+		font-size: 15px;
+	}
+	&__bottom {
+		margin-bottom: 13px;
+		display: flex;
+		justify-content: space-between;
+		span {
+			font-size: 13px;
+		}
+	}
+	&__cl {
+		font-size: 17px;
+	}
+	&__cost {
+		font-size: 17px;
+	}
+	&__img {
+		width: 100%;
+		height: auto;
+		border-radius: 5px 5px 0 0;
+	}
+	&__inner-title {
+		margin-bottom: 14px;
+	}
+	&__inner-text {
+		margin-bottom: 20px;
+		max-width: 70%;
+	}
+	&__inner-desc {
+		color: $c-dark;
+		line-height: 1.5;
+	}
+	@include max-screen($breakpoint-xxl) {
+		&__items {
+			grid-template-columns: repeat(3, 1fr);
+		}
+		&__inner-text {
+			max-width: none;
+		}
+		&__inner-title {
+			font-size: 22px;
+		}
+	}
+	@include max-screen($breakpoint-xl) {
+		&__btn {
+			padding: 0 25px;
+		}
+		&__cl {
+			font-size: 14px;
+		}
+		&__cost {
+			font-size: 14px;
+		}
+	}
+	@include max-screen($breakpoint-l) {
+		&__items {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@include max-screen($breakpoint-md) {
+		&__items {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	@include max-screen($breakpoint-sm) {
+	}
+}

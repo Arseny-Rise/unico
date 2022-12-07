@@ -1,0 +1,173 @@
+{% extends "../templates/base.nunj" %}
+
+{% from "../components/button/button.nunj" import button %}
+{% from "../components/icon/icon.nunj" import icon %}
+{% from "../components/switch/switch.nunj" import switch %}
+{% from "../components/input/input.nunj" import input %}
+{% from "../components/select/select.nunj" import select %}
+{% from "../components/hint/hint.nunj" import hint %}
+{% from "../components/textarea/textarea.nunj" import textarea %}
+
+{% set addressOptions = [{
+	text: 'Дом МСК',
+	value: 'Дом МСК'
+	},
+	{
+	text: 'Дом СПБ',
+	value: 'Дом СПБ'
+	}]
+%}
+
+{% set timeOptions = [{
+	text: '06:00 - 08:00',
+	value: '06:00 - 08:00'
+	},
+	{
+	text: '07:00 - 09:00',
+	value: '07:00 - 09:00'
+	},
+	{
+	text: '08:00 - 10:00',
+	value: '08:00 - 10:00'
+	},
+	{
+	text: '09:00 - 11:00',
+	value: '09:00 - 11:00'
+	},
+	{
+	text: '10:00 - 12:00',
+	value: '10:00 - 12:00'
+	}]
+%}
+
+{% block content %}
+
+	{% include '../includes/header/header.nunj' %}
+
+	<main class="main checkout">
+		<form action="#" class="container _checkout">
+			<h1 class="checkout__title">Оформление заказа</h1>
+			<p class="checkout__subtitle">
+				Снижение веса <span>1500</span>&nbsp;ккал на <span>16</span> дней
+			</p>
+			<div class="checkout__body">
+				<p class="checkout__body-title">Ваши данные*</p>
+				<div class="checkout__row">
+					{{input({
+						className: 'checkout__input',
+						required: true,
+						title: 'ФИО'
+					})}}
+					{{input({
+						className: 'checkout__input',
+						required: true,
+						title: 'Email',
+						type: 'email'
+					})}}
+				</div>
+				{{select({
+					title: 'Адрес доставки - Оформить доставку на разные адреса поможет Ваш менеджер',
+					className: 'checkout__select _full',
+					array: addressOptions
+				})}}
+				<div class="checkout__row">
+					{{button({
+						className: '_offer _green checkout__btn',
+						children: 'Добавить адрес доставки',
+						attr: 'data-modal-btn="address"'
+					})}}
+					<div class="checkout__info">
+						<div class="checkout__info-icon">
+							{{icon({
+								iconName: 'info',
+								attr: 'style="width: 30px; height: 30px;"'
+							})}}
+						</div>
+						<p class="checkout__info-text">
+							<span>Платная доставка: 300 ₽</span>
+							<span>2 часовой интервал с 06:00 до 12:00</span>
+						</p>
+					</div>
+				</div>
+				{{textarea({
+					title: 'Комментарий к заказу (пропуск, не звонить, оставить у двери и тд.)',
+					className: 'checkout__textarea'
+				})}}
+				<div class="checkout__row">
+					<div class="checkout__col">
+						<p class="checkout__body-title">Время первой доставки*</p>
+						{% include '../includes/checkout-date/checkout-date.nunj' %}
+						{{select({
+							className: 'checkout__select _full',
+							array: timeOptions
+						})}}
+					</div>
+					<div class="checkout__col">
+						<p class="checkout__descr">Если заказ оформлен и оплачен до 14:00, ближайшая доставка утром следующего дня</p>
+						<div class="checkout__switch">
+							{{switch({
+								text: 'Нужны приборы',
+								className: 'checkout__switch-general'
+							})}}
+							{{hint({
+								className: 'checkout__hint',
+								text: 'Доставки только по будням. Исключаются выходные и праздничные дни.'
+							})}}
+						</div>
+						<div class="checkout__switch">
+							{{switch({
+								text: 'Только по будням',
+								className: 'checkout__switch-general'
+							})}}
+							{{hint({
+								className: 'checkout__hint',
+								text: 'Доставки только по будням. Исключаются выходные и праздничные дни.'
+							})}}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="checkout__body _bottom">
+				<div class="checkout__bottom">
+					<div class="checkout__promo">
+						{{input({
+							className: 'checkout__promo-input',
+							title: 'Введите промокод'
+						})}}
+						{{button({
+							className: '_offer checkout__promo-btn',
+							children: 'Ок',
+							attr: 'type="button"'
+						})}}
+					</div>
+					<ul class="checkout__costs">
+						<li class="checkout__cost">
+							<span>Сумма заказа</span>
+							<span>100 000 ₽</span>
+						</li>
+						<li class="checkout__cost">
+							<span>Скидка</span>
+							<span>30%</span>
+						</li>
+						<li class="checkout__cost">
+							<span>Доставка</span>
+							<span>4 500 ₽</span>
+						</li>
+						<li class="checkout__cost _large">
+							<span>Итого к оплате</span>
+							<span>74 500 ₽</span>
+						</li>
+					</ul>
+					{{button({
+						className: '_offer _full _green checkout__btn-submit',
+						children: 'Оформить заказ',
+						type: 'submit'
+					})}}
+					<p class="checkout__btn-descr">Необходимо заполнить все обязательные поля*</p>
+				</div>
+			</div>
+		</form>
+	</main>
+
+	{% include '../includes/footer/footer.nunj' %}
+{% endblock %}

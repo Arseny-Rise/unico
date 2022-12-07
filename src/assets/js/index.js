@@ -8,7 +8,6 @@
 // gsap.defaults({
 // 	overwrite: 'auto',
 // });
-
 class ProjectApp {
 	constructor() {
 		this.env = require('./utils/env').default;
@@ -16,7 +15,17 @@ class ProjectApp {
 		this.classes = {
 			// Signal: require('./classes/Signal').default,
 		};
-		this.components = {};
+		this.components = {
+			Burger: require('../../components/burger/burger').default,
+			FirstSlider: require('../../includes/first-slider/first-slider').default,
+			DietSlider: require('../../includes/diet-slider/diet-slider').default,
+			DietRange: require('../../includes/diet-range/diet-range').default,
+			Modals: require('../../includes/modals/modals').default,
+			Select: require('../../components/select/select').default,
+			CheckoutDate: require('../../includes/checkout-date/checkout-date').default,
+			PriceTable: require('../../includes/price-table/price-table').default,
+			DietFirst: require('../../includes/diet-first/diet-first').default,
+		};
 		this.helpers = {};
 		this.modules = {};
 		document.addEventListener('DOMContentLoaded', () => {

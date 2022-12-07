@@ -1,0 +1,95 @@
+{% from "../../components/button/button.nunj" import button %}
+{% from "../../components/icon/icon.nunj" import icon %}
+{% from "../../components/input/input.nunj" import input %}
+{% from "../../components/select/select.nunj" import select %}
+{% from "../../components/textarea/textarea.nunj" import textarea %}
+
+{% set selectOptions = [{
+	text: 'Москва +10 км от МКАД',
+	value: 'Москва +10 км от МКАД'
+	},
+	{
+	text: '11 - 29 км от МКАД',
+	value: '11 - 29 км от МКАД'
+	},
+	{
+	text: '30 км и более от МКАД',
+	value: '30 км и более от МКАД'
+	},
+	{
+	text: 'Не знаю расстояние',
+	value: 'Не знаю расстояние'
+	}]
+%}
+
+<div class="modal modal-address" data-modal="address">
+	<div class="modal__inner  modal-address__inner">
+		<p class="modal__title modal-address__title">Добавить новый адрес</p>
+		<form class="modal__form modal-address__form" action="#">
+			{{textarea({
+				title: 'Город, улица, дом',
+				className: 'modal-address__textarea',
+				required: true
+			})}}
+			<div class="modal-address__grid">
+				{{input({
+					className: 'modal-address__input',
+					required: true,
+					title: 'Подъезд'
+				})}}
+				{{input({
+					className: 'modal-address__input',
+					required: true,
+					title: 'Квартира'
+				})}}
+				{{input({
+					className: 'modal-address__input',
+					required: true,
+					title: 'Этаж'
+				})}}
+				{{input({
+					className: 'modal-address__input',
+					required: true,
+					title: 'Домофон'
+				})}}
+			</div>
+			<div class="modal__form-row modal-address__row">
+				{{select({
+					title: 'Расстояние до МКАД',
+					className: 'modal-address__select _full',
+					array: selectOptions
+				})}}
+				<div class="modal-address__info">
+					<div class="checkout__info-icon">
+						{{icon({
+							iconName: 'info',
+							attr: 'style="width: 30px; height: 30px;"'
+						})}}
+					</div>
+					<p class="checkout__info-text">
+						<span>Платная доставка: 300 ₽</span>
+						<span>2 часовой интервал с 06:00 до 12:00</span>
+					</p>
+				</div>
+			</div>
+			{{input({
+				className: 'modal-address__input _name',
+				required: true,
+				title: 'Присвойте ему название. Например «дом»'
+			})}}
+			<div class="modal-address__map">
+				<iframe class="modal-address__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa564ace8cce654d13b0536b2bc4c8df8e50b80f81fd8e3e8892aa5d49fa40717&source=constructor" width="527" height="170" frameborder="0"></iframe>
+			</div>
+			{{button({
+				className: '_offer _green modal-address__btn',
+				children: 'Сохранить адрес',
+				type: 'submit'
+			})}}
+		</form>
+	</div>
+	<button class="modal__exit" type="button">
+		<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path fill-rule="evenodd" clip-rule="evenodd" d="M8.41425 7.00025L13.7072 1.70725C14.0982 1.31625 14.0982 0.68425 13.7072 0.29325C13.3162 -0.09775 12.6842 -0.09775 12.2933 0.29325L7.00025 5.58625L1.70725 0.29325C1.31625 -0.09775 0.68425 -0.09775 0.29325 0.29325C-0.09775 0.68425 -0.09775 1.31625 0.29325 1.70725L5.58625 7.00025L0.29325 12.2933C-0.09775 12.6842 -0.09775 13.3162 0.29325 13.7072C0.48825 13.9022 0.74425 14.0002 1.00025 14.0002C1.25625 14.0002 1.51225 13.9022 1.70725 13.7072L7.00025 8.41425L12.2933 13.7072C12.4882 13.9022 12.7443 14.0002 13.0002 14.0002C13.2562 14.0002 13.5122 13.9022 13.7072 13.7072C14.0982 13.3162 14.0982 12.6842 13.7072 12.2933L8.41425 7.00025Z"/>
+		</svg>
+	</button>
+</div>

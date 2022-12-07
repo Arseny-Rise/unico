@@ -1,0 +1,44 @@
+.recipes {
+	&__items {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 45px;
+	}
+	&__item {
+		&:hover {
+			.recipes__title {
+				color: $c-green;
+			}
+		}
+	}
+	&__date {
+		margin-bottom: 10px;
+		font-size: 13px;
+		color: $c-grey-2;
+	}
+	&__title {
+		@extend .animated;
+		margin-bottom: 12px;
+		font-size: 16px;
+	}
+	&__img {
+		border-radius: 5px;
+		height: 170px;
+		object-fit: cover;
+	}
+	@include max-screen($breakpoint-xxl) {
+		margin-right: 20px;
+		position: relative;
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		&__items {
+			display: flex;
+			grid-template-columns: none;
+			gap: 25px;
+		}
+		&__item {
+			width: 265px;
+			flex-shrink: 0;
+		}
+	}
+}

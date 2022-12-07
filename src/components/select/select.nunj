@@ -1,0 +1,12 @@
+{% macro select(props) %}
+	<div class="select{% if props.className %} {{ props.className }}{% endif %}">
+		<input class="select__input" type="hidden" name="{{ props.array[0].text }}" value="{{ props.array[0].value }}">
+		{% if props.title %} <p class="select__title">{{ props.title }}</p>{% endif %}
+		<div class="select__top">{{ props.array[0].text }}</div>
+		<ul class="select__drop">
+			{% for item in props.array %}
+				<li data-value="{{ item.value }}" class="select__item">{{ item.text }}</li>
+			{% endfor %}
+		</ul>
+	</div>
+{% endmacro %}

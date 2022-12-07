@@ -1,0 +1,4 @@
+<div class="bg">
+	<img class="bg__lemon _first" width="330" height="560" src="/assets/images/lemon-1.png" alt="">
+	<img class="bg__lemon _second" width="340" height="500" src="/assets/images/lemon-2.png" alt="">
+</div>

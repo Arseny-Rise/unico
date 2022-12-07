@@ -1,0 +1,119 @@
+<section class="ration home__ration">
+	<div class="container">
+		<div class="ration__inner-text">
+			<h2 class="text-head-md ration__inner-title">Попробуйте уже сегодня рационы от&nbsp;Юлии Высоцкой</h2>
+			<p class="ration__inner-desc">Наши диетологи следят за&nbsp;тем, чтобы каждое блюдо было столь&nbsp;же вкусным, сколь и&nbsp;питательным, а&nbsp;также давало вам множество витаминов и&nbsp;минералов, необходимых для хорошего самочувствия.</p>
+		</div>
+		<ul class="ration__items">
+			<li class="ration__item">
+				<img class="ration__img" src="/assets/images/card-1.jpg" width="280" height="150" alt="">
+				<div class="ration__body">
+					<p class="ration__title">Снижение веса</p>
+					<p class="ration__text">Снижение веса в&nbsp;сочетании с&nbsp;плаванием, йогой, фитнесом и&nbsp;легким спортом</p>
+					<div class="ration__bottom">
+						<p class="ration__cl">
+							1300 - 1500 <span>ккал</span>
+						</p>
+						<p class="ration__cost">
+							<span>от</span> 2600 ₽
+						</p>
+					</div>
+					{{
+						button({
+							className: '_full ration__btn',
+							children: 'Выбрать рацион',
+							href: '#'
+						})
+					}}
+				</div>
+			</li>
+			<li class="ration__item">
+				<img class="ration__img" src="/assets/images/card-2.jpg" width="280" height="150" alt="">
+				<div class="ration__body">
+					<p class="ration__title">Перезагрузка</p>
+					<p class="ration__text">Снижение веса в&nbsp;сочетании с&nbsp;плаванием, йогой, фитнесом и&nbsp;легким спортом</p>
+					<div class="ration__bottom">
+						<p class="ration__cl">
+							1300 - 1500 <span>ккал</span>
+						</p>
+						<p class="ration__cost">
+							<span>от</span> 3000 ₽
+						</p>
+					</div>
+					{{
+						button({
+							className: '_full ration__btn',
+							children: 'Выбрать рацион',
+							href: '#'
+						})
+					}}
+				</div>
+			</li>
+			<li class="ration__item">
+				<img class="ration__img" src="/assets/images/card-1.jpg" width="280" height="150" alt="">
+				<div class="ration__body">
+					<p class="ration__title">Баланс</p>
+					<p class="ration__text">Снижение веса в&nbsp;сочетании с&nbsp;плаванием, йогой, фитнесом и&nbsp;легким спортом</p>
+					<div class="ration__bottom">
+						<p class="ration__cl">
+							1800 - 2100 <span>ккал</span>
+						</p>
+						<p class="ration__cost">
+							<span>от</span> 3500 ₽
+						</p>
+					</div>
+					{{
+						button({
+							className: '_full ration__btn',
+							children: 'Выбрать рацион',
+							href: '#'
+						})
+					}}
+				</div>
+			</li>
+			<li class="ration__item">
+				<img class="ration__img" src="/assets/images/card-2.jpg" width="280" height="150" alt="">
+				<div class="ration__body">
+					<p class="ration__title">Кето</p>
+					<p class="ration__text">Снижение веса в&nbsp;сочетании с&nbsp;плаванием, йогой, фитнесом и&nbsp;легким спортом</p>
+					<div class="ration__bottom">
+						<p class="ration__cl">
+							800 - 1500 <span>ккал</span>
+						</p>
+						<p class="ration__cost">
+							<span>от</span> 3600 ₽
+						</p>
+					</div>
+					{{
+						button({
+							className: '_full ration__btn',
+							children: 'Выбрать рацион',
+							href: '#'
+						})
+					}}
+				</div>
+			</li>
+			<li class="ration__item">
+				<img class="ration__img" src="/assets/images/card-2.jpg" width="280" height="150" alt="">
+				<div class="ration__body">
+					<p class="ration__title">Кето</p>
+					<p class="ration__text">Снижение веса в&nbsp;сочетании с&nbsp;плаванием, йогой, фитнесом и&nbsp;легким спортом</p>
+					<div class="ration__bottom">
+						<p class="ration__cl">
+							800 - 1500 <span>ккал</span>
+						</p>
+						<p class="ration__cost">
+							<span>от</span> 3600 ₽
+						</p>
+					</div>
+					{{
+						button({
+							className: '_full ration__btn',
+							children: 'Выбрать рацион',
+							href: '#'
+						})
+					}}
+				</div>
+			</li>
+		</ul>
+</section>

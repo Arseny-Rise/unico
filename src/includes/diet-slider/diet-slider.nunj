@@ -1,0 +1,41 @@
+<div class="diet-slider">
+	<div class="diet-slider__wrap diet-first__slider" data-diet-slider>
+		<div class="diet-slider__slide">
+			<img class="diet-slider__img" src="/assets/images/diet-0.jpg" width="185" height="254" alt="">
+			<p class="diet-slider__text">288 ккал - 12 б - 18 ж - 19 у</p>
+			<p class="diet-slider__title">Брускетта с кремом из тофу и овощами</p>
+			<button class="diet-slider__btn" data-modal-btn="diet"></button>
+		</div>
+		<div class="diet-slider__slide">
+			<img class="diet-slider__img" src="/assets/images/diet-0.jpg" width="185" height="254" alt="">
+			<p class="diet-slider__text">288 ккал - 12 б - 18 ж - 19 у</p>
+			<p class="diet-slider__title">Брускетта с кремом из тофу и овощами</p>
+			<button class="diet-slider__btn" data-modal-btn="diet"></button>
+		</div>
+		<div class="diet-slider__slide">
+			<img class="diet-slider__img" src="/assets/images/diet-0.jpg" width="185" height="254" alt="">
+			<p class="diet-slider__text">288 ккал - 12 б - 18 ж - 19 у</p>
+			<p class="diet-slider__title">Брускетта с кремом из тофу и овощами</p>
+			<button class="diet-slider__btn" data-modal-btn="diet"></button>
+		</div>
+		<div class="diet-slider__slide">
+			<img class="diet-slider__img" src="/assets/images/diet-0.jpg" width="185" height="254" alt="">
+			<p class="diet-slider__text">288 ккал - 12 б - 18 ж - 19 у</p>
+			<p class="diet-slider__title">Брускетта с кремом из тофу и овощами</p>
+			<button class="diet-slider__btn" data-modal-btn="diet"></button>
+		</div>
+		<div class="diet-slider__slide">
+			<img class="diet-slider__img" src="/assets/images/diet-0.jpg" width="185" height="254" alt="">
+			<p class="diet-slider__text">288 ккал - 12 б - 18 ж - 19 у</p>
+			<p class="diet-slider__title">Брускетта с кремом из тофу и овощами</p>
+			<button class="diet-slider__btn" data-modal-btn="diet"></button>
+		</div>
+		<div class="diet-slider__slide">
+			<img class="diet-slider__img" src="/assets/images/diet-0.jpg" width="185" height="254" alt="">
+			<p class="diet-slider__text">288 ккал - 12 б - 18 ж - 19 у</p>
+			<p class="diet-slider__title">Брускетта с кремом из тофу и овощами</p>
+			<button class="diet-slider__btn" data-modal-btn="diet"></button>
+		</div>
+	</div>
+</div>
+

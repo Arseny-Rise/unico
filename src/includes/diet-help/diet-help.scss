@@ -1,0 +1,32 @@
+.diet-help {
+	&__inner {
+		display: flex;
+		align-items: flex-start;
+	}
+	&__img {
+		margin-right: 60px;
+		border-radius: 50%;
+	}
+	&__title {
+		margin-bottom: 20px;
+		color: $c-dark;
+	}
+	&__descr {
+		margin-bottom: 24px;
+		font-size: 13px;
+		color: $c-dark;
+	}
+	&__phone {
+		margin-bottom: 30px;
+		display: inline-block;
+		font-size: 28px;
+	}
+	&__btn {
+		padding: 0 52px;
+	}
+	@include max-screen($breakpoint-md) {
+		&__inner {
+			display: none;
+		}
+	}
+}

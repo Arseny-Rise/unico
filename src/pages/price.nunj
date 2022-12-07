@@ -1,0 +1,37 @@
+{% extends "../templates/base.nunj" %}
+
+{% from "../components/icon/icon.nunj" import icon %}
+{% from "../components/breadcrumbs/breadcrumbs.nunj" import breadcrumbs %}
+
+{% block content %}
+
+	{% include '../includes/header/header.nunj' %}
+
+	<main class="main price">
+		<div class="container">
+			{{ breadcrumbs({
+				className: 'price__breadcrumbs',
+				array: [
+					{
+						text: 'Главная',
+						href: '/'
+					},
+					{
+						text: 'Прайс'
+					}
+				]
+			})}}
+			<h1 class="text-head-reg price__title">Прайс лист</h1>
+
+			<div class="price__content">
+				{% include '../includes/price-table/price-table.nunj' %}
+			</div>
+		</div>
+		{% include '../includes/advantages/advantages.nunj' %}
+	</main>
+
+	{% include '../includes/footer/footer.nunj' %}
+
+	{% include '../includes/bg/bg.nunj' %}
+
+{% endblock %}

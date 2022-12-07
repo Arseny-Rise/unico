@@ -1,0 +1,49 @@
+.login-btn {
+	@include button-reset;
+	display: flex;
+	align-items: center;
+	color: $c-white;
+	font-weight: 400;
+	&:hover {
+		.login-btn__path {
+			&:first-child {
+				fill: $c-green;
+			}
+			&:last-child {
+				fill: $c-white;
+			}
+		}
+	}
+	&__icon {
+		margin-right: 9px;
+	}
+	&__text {
+		max-width: 80px;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	&__path {
+		@extend .animated;
+		&:first-child {
+			fill: $c-white;
+		}
+		&:last-child {
+			fill: $c-green;
+		}
+	}
+	@include max-screen($breakpoint-xl) {
+		font-size: 13px;
+		&__icon {
+			margin-right: 5px;
+		}
+	}
+	@include max-screen($breakpoint-md) {
+		&__icon {
+			margin-right: 0;
+		}
+		&__text {
+			display: none;
+		}
+	}
+}

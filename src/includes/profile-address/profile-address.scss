@@ -1,0 +1,19 @@
+.profile {
+	&__address {
+		position: relative;
+	}
+	&__address-delete {
+		@include button-reset;
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: flex;
+		align-items: center;
+		font-size: 13px;
+		color: $c-red;
+		svg {
+			margin-right: 5px;
+			vertical-align: middle;
+		}
+	}
+}

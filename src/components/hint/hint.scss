@@ -1,0 +1,49 @@
+.hint {
+	position: relative;
+	display: flex;
+	z-index: 1;
+	cursor: help;
+	user-select: none;
+	&:hover {
+		.hint__text {
+			display: inline-block;
+		}
+	}
+	&__icon {
+		vertical-align: middle;
+	}
+	&__text {
+		display: none;
+		position: absolute;
+		left: -40px;
+		bottom: calc(100% + 15px);
+		width: 300px;
+		padding: 20px;
+		font-size: 13px;
+		background-color: $c-white;
+		border-radius: 5px;
+		box-shadow: 0px 4px 15px rgba($c-black, 0.1);
+	}
+	@include max-screen($breakpoint-xl) {
+		&__text {
+			left: 0;
+			transform: translateX(-50%);
+		}
+	}
+	@include max-screen($breakpoint-l) {
+		&__text {
+			padding: 10px;
+			width: 200px;
+			transform: translateX(-20%);
+			font-size: 11px;
+		}
+	}
+	@include max-screen($breakpoint-md) {
+		&__text {
+			padding: 5px;
+			width: 200px;
+			transform: translateX(-40%);
+			font-size: 10px;
+		}
+	}
+}

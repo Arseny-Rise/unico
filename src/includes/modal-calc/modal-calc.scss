@@ -1,0 +1,43 @@
+.modal-calc {
+	max-width: 768px;
+	&._active {
+		display: flex;
+	}
+	&__inner {
+		width: 80%;
+	}
+	&__input {
+		width: 110px;
+	}
+	&__form {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		> *:not(:last-child) {
+			margin-bottom: 40px;
+		}
+	}
+	&__title {
+		margin-bottom: 40px;
+		font-size: 20px;
+		text-align: center;
+	}
+	&__select {
+		width: 50%;
+		&._full {
+			width: 100%;
+		}
+	}
+	&__btn {
+		margin: 0 auto;
+	}
+	&__checks {
+		display: flex;
+		justify-content: space-between;
+	}
+	@include max-screen($breakpoint-l) {
+		&__inner {
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,153 @@
+.diet-slider {
+	padding-bottom: 70px;
+	margin: 65px 0 10px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	&__wrap {
+		width: calc(100% - 150px);
+		&.flickity-enabled {
+			.diet-slider__img {
+				opacity: 1;
+			}
+		}
+	}
+	&__slide {
+		display: flex;
+		flex-direction: column;
+		padding-top: 6px;
+		margin-right: 30px;
+		width: 185px;
+		cursor: pointer;
+		&:hover {
+			.diet-slider__img {
+				transform: translateY(-5px);
+			}
+		}
+	}
+	&__img {
+		@extend .animated;
+		margin-bottom: 13px;
+		height: auto;
+		transform: translateY(0px);
+		opacity: 0;
+	}
+	&__text {
+		margin-bottom: 6px;
+		font-size: 12px;
+		color: $c-green;
+		text-align: center;
+	}
+	&__title {
+		font-size: 13px;
+		line-height: 1.35;
+		color: $c-dark;
+	}
+	&__btn {
+		@include button-reset;
+		height: 0;
+		width: 0;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			outline: 10px;
+		}
+		&:focus-visible {
+			&::before {
+				outline: 1px auto $c-black;
+			}
+		}
+	}
+	.flickity-prev-next-button {
+		@extend .animated;
+		top: 41%;
+		height: 50px;
+		width: 50px;
+		overflow: hidden;
+		background: none;
+		border: 2px solid $c-dark;
+		path {
+			@extend .animated;
+		}
+		&.previous {
+			left: -80px;
+		}
+		&.next {
+			right: -80px;
+		}
+		.flickity-button-icon {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 100px;
+			height: 100px;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.flickity-button:hover {
+		border-color: $c-green;
+		path {
+			fill: $c-green;
+		}
+	}
+	.flickity-button:focus {
+		box-shadow: none;
+	}
+	.flickity-button:disabled {
+		opacity: 0.3;
+	}
+	@include max-screen($breakpoint-xxl) {
+		margin: 40px 0 0;
+		&__wrap {
+			width: calc(100% - 130px);
+		}
+		.flickity-prev-next-button {
+			height: 40px;
+			width: 40px;
+			&.previous {
+				left: -80px;
+			}
+			&.next {
+				right: -80px;
+			}
+			.flickity-button-icon {
+				width: 60px;
+				height: 60px;
+			}
+		}
+	}
+	@include max-screen($breakpoint-xl) {
+		&__wrap {
+			width: calc(100% - 90px);
+		}
+		.flickity-prev-next-button {
+			&.previous {
+				left: -45px;
+			}
+			&.next {
+				right: -45px;
+			}
+		}
+	}
+	@include max-screen($breakpoint-l) {
+		.flickity-prev-next-button {
+			display: none;
+		}
+		&__wrap {
+			width: 100%;
+			.flickity-viewport {
+				width: calc(100% + 20px);
+			}
+		}
+	}
+	@include max-screen($breakpoint-md) {
+		padding-bottom: 18px;
+	}
+	@include max-screen($breakpoint-sm) {
+		margin: 30px 0 0;
+	}
+}

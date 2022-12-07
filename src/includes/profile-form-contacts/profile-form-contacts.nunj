@@ -1,0 +1,48 @@
+{% from "../../components/button/button.nunj" import button %}
+{% from "../../components/input/input.nunj" import input %}
+{% from "../../components/checkbox/checkbox.nunj" import checkbox %}
+
+<form class="profile-form-contacts profile__form-contacts" action="#">
+	<div class="profile__row">
+		<div class="profile__col">
+			{{input({
+				className: 'profile__input',
+				title: 'ФИО',
+				required: true
+			})}}
+			{{input({
+				className: 'profile__input',
+				title: 'Email (не обязательно)'
+			})}}
+			{{input({
+				className: 'profile__input',
+				title: 'Дата рождения',
+				required: true
+			})}}
+		</div>
+		<div class="profile__col">
+			{{input({
+				className: 'profile__input profile__input-phone',
+				title: 'Телефон',
+				required: true,
+				disabled: true,
+				value: '+7 (999) 999 - 99 - 99'
+			})}}
+<p class="profile__phone-text">Чтобы изменить телефон обратитесь в&nbsp;службу поддержки по&nbsp;тел.: +7&nbsp;495&nbsp;775 82 33</p>
+			<p class="profile__checkbox-descr">Только полезная информация и&nbsp;скидки. <br> Никакого спама.</p>
+			{{checkbox({
+				text: 'Получать уведомления по sms',
+				className: 'profile__checkbox'
+			})}}
+			{{checkbox({
+				text: 'Получать уведомления по email',
+				className: 'profile__checkbox'
+			})}}
+		</div>
+	</div>
+	{{button({
+		className: '_green profile__btn profile__contacts-btn',
+		children: 'Сохранить',
+		type: 'submit'
+	})}}
+</form>

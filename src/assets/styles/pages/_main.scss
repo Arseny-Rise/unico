@@ -1,0 +1,28 @@
+.home {
+	&__first-slider {
+		margin-bottom: 30px;
+	}
+	&__advantages {
+		margin-bottom: 85px;
+	}
+	&__ration {
+		margin-bottom: 90px;
+	}
+	&__map {
+		margin-bottom: 120px;
+	}
+	&__benefits {
+		margin-bottom: 85px;
+	}
+	@include max-screen($breakpoint-md) {
+		&__ration {
+			margin-bottom: 0;
+		}
+		&__map {
+			margin-bottom: 50px;
+		}
+		&__benefits {
+			margin-bottom: 50px;
+		}
+	}
+}

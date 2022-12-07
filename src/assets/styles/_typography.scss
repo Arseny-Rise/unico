@@ -1,0 +1,49 @@
+.text-head {
+	&-exlg {
+		font-size: 40px;
+		font-weight: 300;
+	}
+	&-lg {
+		font-size: 35px;
+		font-weight: 300;
+	}
+	&-md {
+		font-size: 32px;
+		font-weight: 300;
+	}
+	&-reg {
+		font-size: 30px;
+		font-weight: 300;
+	}
+	&-sm {
+		font-size: 25px;
+		font-weight: 300;
+	}
+}
+.text-block {
+	font-size: 16px;
+	line-height: 1.5;
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		margin-bottom: 0.5em;
+	}
+	p {
+		margin-bottom: 1.7em;
+		color: $c-dark;
+		line-height: 27px;
+	}
+	img {
+		height: auto;
+		margin: 0 0 2.6em;
+		border-radius: 5px;
+	}
+	@include max-screen($breakpoint-md) {
+		font-size: 14px;
+		.text-head-exlg {
+			font-size: 25px;
+		}
+	}
+}

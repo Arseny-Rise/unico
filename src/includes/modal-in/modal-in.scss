@@ -1,0 +1,6 @@
+.modal-in {
+	max-width: 410px;
+	&._active {
+		display: flex;
+	}
+}

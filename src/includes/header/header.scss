@@ -1,4 +1,75 @@
 .header {
-	padding: 20px 0;
-	background: #ccc;
+	position: relative;
+	display: flex;
+	align-items: center;
+	background: $c-header-bg;
+	color: $c-white;
+	min-height: 70px;
+	z-index: 1;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__block {
+		display: flex;
+		align-items: center;
+	}
+	&__logo {
+		margin-right: 36px;
+	}
+	&__phone {
+		line-height: 1;
+		font-size: 20px;
+	}
+	&__login-btn {
+		margin-left: 80px;
+	}
+	&__burger {
+		margin-left: 50px;
+		display: none;
+	}
+	@include max-screen($breakpoint-xxl) {
+		&__call {
+			display: none;
+		}
+		&__login-btn {
+			margin-left: 0px;
+		}
+	}
+	@include max-screen($breakpoint-xl) {
+		min-height: 50px;
+		&__phone {
+			color: $c-beige;
+			font-size: 15px;
+		}
+		&__burger {
+			display: block;
+		}
+		&__logo {
+			margin-right: 0;
+		}
+	}
+	@include max-screen($breakpoint-md) {
+		&__burger {
+			margin-left: 15px;
+		}
+		&__phone {
+			position: static;
+			transform: none;
+		}
+	}
+	@include max-screen($breakpoint-sm) {
+		&__phone {
+			font-size: 14px;
+		}
+	}
+}
+._desktop {
+	.header__phone {
+		@extend .animated;
+		&:hover {
+			color: $c-green;
+		}
+	}
 }

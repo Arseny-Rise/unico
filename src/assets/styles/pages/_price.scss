@@ -1,0 +1,22 @@
+.price {
+	&__breadcrumbs {
+		margin-bottom: 27px;
+	}
+	&__title {
+		margin-bottom: 50px;
+	}
+	&__content {
+		margin-bottom: 140px;
+		overflow: auto;
+	}
+	@include max-screen($breakpoint-xl) {
+		&__content {
+			margin-bottom: 0;
+		}
+	}
+}
+.price {
+	.advantages__item {
+		padding-left: 0;
+	}
+}

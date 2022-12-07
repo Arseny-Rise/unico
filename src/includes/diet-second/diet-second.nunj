@@ -1,0 +1,53 @@
+{% from "../../components/switch/switch.nunj" import switch %}
+{% from "../../components/button/button.nunj" import button %}
+{% from "../../components/hint/hint.nunj" import hint %}
+
+
+<section class="diet-second">
+	<div class="container">
+		<div class="diet-second__grid">
+			<div class="diet-second__block _first">
+				<div class="diet-second__text text-block">
+					<h2 class="text-head-exlg">Особенности рациона</h2>
+					<p>Кишечник&nbsp;&mdash; корень нашего организма.</p>
+					<p>Именно такой подход австрийский врач Франц Ксавьер Майер использовал в&nbsp;создании специального курса детокс-терапии. Полноценно работающий пищеварительный тракт&nbsp;&mdash; основа сильного иммунитета. В&nbsp;результате несбалансированного питания, быстрого поглощения еды и&nbsp;приема пищи перед отходом ко&nbsp;сну в&nbsp;кишечнике образуются токсины, спирты и&nbsp;газы.</p>
+					<img src="/assets/images/diet-1.jpg" width="610" height="240" alt="">
+					<p>Именно такой подход австрийский врач Франц Ксавьер Майер использовал в&nbsp;создании специального курса детокс-терапии. Полноценно работающий пищеварительный тракт&nbsp;&mdash; основа сильного иммунитета. В&nbsp;результате несбалансированного питания, быстрого поглощения еды и&nbsp;приема пищи перед отходом ко&nbsp;сну в&nbsp;кишечнике образуются токсины, спирты и&nbsp;газы.</p>
+				</div>
+				{% include '../diet-help/diet-help.nunj' %}
+			</div>
+			<div class="diet-second__block _second">
+				<div class="diet-second__sticky">
+					{% include '../diet-range/diet-range.nunj' %}
+					{{switch({
+						text: 'Добавить воду «TASSAY» - 150 ₽/шт.',
+						className: 'diet-second__switch'
+					})}}
+					<ul class="diet-second__costs">
+						<li class="diet-second__cost">
+							<span>
+								Экономия
+								{{hint({
+									className: 'diet-second__hint',
+									text: 'Так эффективнее планировать закупку свежих продуктов. А часть экономии мы отдаем в виде скидки.'
+								})}}
+								</span>
+							<span>3 320 ₽</span>
+						</li>
+						<li class="diet-second__cost _large">
+							<span>Стоимость рациона</span>
+							<span>30 200 ₽</span>
+						</li>
+					</ul>
+					{{button({
+						className: '_diet _full _green diet-second__btn',
+						children: 'Заказать рацион на&nbsp;<span>1 день</span>',
+						attr: 'data-modal-btn="diet-offer"'
+					})}}
+					<p class="diet-second__btn-desc">Далее вы можете применить промокод</p>
+					<img class="diet-second__img" src="/assets/images/diet-2.jpg" width="455" height="120" alt="Только в августе скидка 30% на любой рацион">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,43 @@
+.exit-btn {
+	@include button-reset;
+	display: flex;
+	align-items: center;
+	color: $c-dark;
+	font-weight: 400;
+	&:hover {
+		.exit-btn__path {
+			&:first-child {
+				fill: $c-dark;
+			}
+			&:last-child {
+				fill: $c-green;
+			}
+		}
+	}
+	&__icon {
+		margin-left: 9px;
+	}
+	&__path {
+		@extend .animated;
+		&:first-child {
+			fill: $c-green;
+		}
+		&:last-child {
+			fill: $c-dark;
+		}
+	}
+	@include max-screen($breakpoint-xl) {
+		font-size: 13px;
+		&__icon {
+			margin-left: 5px;
+		}
+	}
+	@include max-screen($breakpoint-md) {
+		&__icon {
+			margin-left: 0;
+		}
+		&__text {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+{% extends "../templates/base.nunj" %}
+
+{% from "../components/icon/icon.nunj" import icon %}
+{% from "../components/lk-header/lk-header.nunj" import lkHeader %}
+
+{% block content %}
+
+	{% include '../includes/header/header.nunj' %}
+
+	<main class="main lk friend">
+		<div class="container _lk">
+			{{lkHeader({
+				array: [
+					{
+						text: 'Профиль',
+						href: '/profile.html'
+					},
+					{
+						text: 'Заказы',
+						href: '/orders.html'
+					},
+					{
+						text: 'Пригласить друга',
+						href: '/friend.html',
+						active: true
+					}
+				]
+			})}}
+			<div class="lk__body">
+				<img src="/assets/images/friend.jpg" alt="" class="friend__img" width="620" height="200">
+				<h2 class="friend__title">Подарите другу скидку 10% на первый заказ!</h2>
+				<div class="friend__grid">
+					<div class="friend__col">
+						<p class="friend__text">Подарите другу скидку 10% на первый заказ! <br> А мы Вам подарим 2500 бонусов, как только он оплатит покупку и получит доставку.</p>
+					</div>
+					<div class="friend__col">
+						<div class="friend__code">
+							<p class="friend__code-title">Ваш промокод</p>
+							<p class="friend__code-text">RAPFI</p>
+						</div>
+						<div class="friend__col-bottom">
+							<p>Копировать</p>
+							<ul class="friend__socs">
+								<li>
+									<a href="#" target="_blank" class="friend__soc">
+										{{icon({
+											iconName: 'tg-c',
+											attr: 'style="width: 35px; height: 35px;"'
+										})}}
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank" class="friend__soc">
+										{{icon({
+											iconName: 'wa-c',
+											attr: 'style="width: 35px; height: 35px;"'
+										})}}
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank" class="friend__soc">
+										{{icon({
+											iconName: 'vk-c',
+											attr: 'style="width: 35px; height: 35px;"'
+										})}}
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	{% include '../includes/footer/footer.nunj' %}
+
+{% endblock %}

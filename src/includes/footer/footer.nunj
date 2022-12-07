@@ -1,0 +1,69 @@
+{% from "../../components/recall/recall.nunj" import recall %}
+{% from "../../components/login-btn/login-btn.nunj" import loginBtn %}
+{% from "../../components/logo/logo.nunj" import logo %}
+{% from "../../components/icon/icon.nunj" import icon %}
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__grid">
+			<div class="footer__col">
+				{{ logo({
+					className: 'footer__logo'
+				}) }}
+				<ul class="footer__links">
+					<li><a href="#" class="footer__link _small" target="_blank">Договор оферты</a></li>
+					<li><a href="#" class="footer__link _small" target="_blank">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<ul class="footer__menu">
+					<li><a href="#" class="footer__menu-link">Снижение веса</a></li>
+					<li><a href="#" class="footer__menu-link">Перезагрузка</a></li>
+					<li><a href="#" class="footer__menu-link">Баланс</a></li>
+					<li><a href="#" class="footer__menu-link">КЕТО</a></li>
+					<li><a href="#" class="footer__menu-link">Детокс</a></li>
+				</ul>
+			</div>
+			<div class="footer__col">
+				<a href="tel:84957758233" class="footer__phone">8&nbsp;495&nbsp;775 82&nbsp;33</a>
+				<a href="mailto:service@unicodiet.ru"
+					 class="footer__email">service@unicodiet.ru</a>
+				<ul class="footer__links">
+					<li><a href="#" class="footer__link">О компании</a></li>
+					<li><a href="#" class="footer__link">Доставка и оплата</a></li>
+				</ul>
+			</div>
+			<div class="footer__col _flex-between">
+				<div>
+					{{ loginBtn({
+						className: 'footer__login-btn'
+					}) }}
+					<ul class="footer__socs">
+						<li class="footer__soc">
+							<a href="#" target="_blank" aria-label="Telegram">
+								{{ icon({
+									iconName: 'tg',
+									attr: 'viewBox="0 0 32 32" style="width: 32px; height: 32px;"'
+								}) }}
+							</a>
+						</li>
+						<li class="footer__soc">
+							<a href="#" target="_blank" aria-label="VK">
+								{{ icon({
+									iconName: 'vk',
+									attr: 'viewBox="0 0 32 32" style="width: 32px; height: 32px;"'
+								}) }}
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div>
+					{{ recall({
+						className: 'footer__recall _footer'
+					}) }}
+				</div>
+			</div>
+		</div>
+		<p class="footer__mark">ООО &laquo;УНИКО&raquo; ИНН 7702399300&nbsp;ОГРН 1167746296740</p>
+	</div>
+</footer>
