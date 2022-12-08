@@ -22,7 +22,7 @@
 						button({
 							className: '_full ration__btn',
 							children: 'Выбрать рацион',
-							href: '#'
+							href: '/diet.html'
 						})
 					}}
 				</div>
@@ -44,7 +44,7 @@
 						button({
 							className: '_full ration__btn',
 							children: 'Выбрать рацион',
-							href: '#'
+							href: '/diet.html'
 						})
 					}}
 				</div>
@@ -66,7 +66,7 @@
 						button({
 							className: '_full ration__btn',
 							children: 'Выбрать рацион',
-							href: '#'
+							href: '/diet.html'
 						})
 					}}
 				</div>
@@ -88,29 +88,7 @@
 						button({
 							className: '_full ration__btn',
 							children: 'Выбрать рацион',
-							href: '#'
-						})
-					}}
-				</div>
-			</li>
-			<li class="ration__item">
-				<img class="ration__img" src="/assets/images/card-2.jpg" width="280" height="150" alt="">
-				<div class="ration__body">
-					<p class="ration__title">Кето</p>
-					<p class="ration__text">Снижение веса в&nbsp;сочетании с&nbsp;плаванием, йогой, фитнесом и&nbsp;легким спортом</p>
-					<div class="ration__bottom">
-						<p class="ration__cl">
-							800 - 1500 <span>ккал</span>
-						</p>
-						<p class="ration__cost">
-							<span>от</span> 3600 ₽
-						</p>
-					</div>
-					{{
-						button({
-							className: '_full ration__btn',
-							children: 'Выбрать рацион',
-							href: '#'
+							href: '/diet.html'
 						})
 					}}
 				</div>

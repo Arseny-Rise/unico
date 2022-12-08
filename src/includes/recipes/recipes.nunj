@@ -29,13 +29,6 @@
 					<img class="recipes__img" width="265" height="166" src="/assets/images/recipe-1.jpg" alt="">
 				</a>
 			</li>
-			<li class="recipes__item">
-				<a href="#">
-					<p class="recipes__date">17&nbsp;Июня 2019</p>
-					<p class="recipes__title">Разгрузочный день на&nbsp;овсянке</p>
-					<img class="recipes__img" width="265" height="166" src="/assets/images/recipe-1.jpg" alt="">
-				</a>
-			</li>
 		</ul>
 	</div>
 </section>
