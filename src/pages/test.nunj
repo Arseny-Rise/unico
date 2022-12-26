@@ -1,0 +1,246 @@
+{% extends "../templates/base.nunj" %}
+
+{% block content %}
+
+	{% include '../includes/header/header.nunj' %}
+
+	<main class="main diet">
+		<div class="container _text">
+		<div class="text-block">
+			<article class="">
+                  <p>
+                    <b class="red-text">
+                      Esta historia increíble se volvió rápidamente muy popular
+                      en Internet.&nbsp;Todo comenzó cuando Samuel David, de 22 años,
+                      le envió un mensaje a una chica que le gustaba,
+                      expresándole su deseo de conocerla.&nbsp;La chica notó que
+                      Samuel no estaba sola en su foto de perfil y le preguntó
+                      si a su novia no le importaría que se conocieran.&nbsp;La
+                      respuesta le sorprendió: "No es mi novia, es mi madre".
+                    </b>
+                  </p>
+									<img alt="" height="549" loading="lazy" src="https://jovenyhermosa.live/lander/inno-gialuron---pe--17692--df/content/img/cont_1.jpg" width="976">
+                  <figcaption class="">
+                        <span class="">
+                          captura de imagen
+                        </span>
+                        Foto de perfil de Samuel David con su madre Paula la
+                        derecha
+                  </figcaption>
+									<p>
+                    La chica pensó que era una excusa ridícula, pero cuando miró
+                    detalladamente el perfil de Samuel, descubrió que no le
+                    estaba mintiendo. Había varias fotos tituladas "Mi madre y
+                    yo" donde podía ver la misma belleza: su madre Paula Andrea,
+                    de 47 años.&nbsp;Resultó ser que no era la primera vez que
+                    confundían a Paula con la novia de su hijo, y después la
+                    bombardeaban con preguntas sobre cómo se las apañaba para
+                    verse dos veces más joven.&nbsp;Muchos sospechaban que su aspecto
+                    era producto de una cirugía plástica, pero en realidad su
+                    secreto era muy diferente.
+                  </p>
+									<img alt="" class="" height="549" loading="lazy" src="https://jovenyhermosa.live/lander/inno-gialuron---pe--17692--df/content/img/cont_2.jpg" width="976">
+									<figcaption class="">
+                    A la izquierda, Paula de 28 años, con Samuel de 3 años. A la derecha, el 47 cumpleaños de Paula
+                  </figcaption>
+                  <p>
+                    <b>
+                      — Paula, a juzgar por las fotos, no cambiaste nada en los
+                      últimos 20 años.&nbsp;Me gustaría hacerte una pregunta, aunque
+                      probablemente ya estés cansada de responderla: ¿cómo lo
+                      lograste?
+                    </b>
+                  </p>
+                  <p>
+                    — En primer lugar, permíteme darte las gracias, me voy a
+                    poner roja y todo.&nbsp;Es cierto que cambie, ahora mi estilo y
+                    mi forma de vestir es definitivamente mejor.&nbsp;En segundo
+                    lugar, tengo suerte: estoy casada con un dermatólogo.
+                  </p>
+                  <p>
+                    <strong>
+                      — Entonces, ¿la razón por la que te ves tan linda y joven
+                      es completamente suya?
+                    </strong>
+                  </p>
+                  <p>
+                    — Por supuesto.&nbsp;Es un especialista, un médico.&nbsp;Simplemente
+                    sigo sus recomendaciones.
+                  </p>
+                  <p>
+                    <strong>
+                      — Si no es un secreto, ¿cuáles son esas recomendaciones?
+                    </strong>
+                  </p>
+                  <p>
+                    — Las reglas clásicas que habrás escuchado innumerables
+                    veces: un buen sueño y una alimentación adecuada, pero sería
+                    una mentira si te dijera que es suficiente.&nbsp;Mi marido es un
+                    especialista licenciado que trabaja en colaboración con
+                    laboratorios.&nbsp;Hace unos 10 años, fue el primero en
+                    desarrollar una fórmula rejuvenecedora llamada
+                    <strong><a class="inlinelnk" href="#" onclick="document.location.hash='';return false;"> Inno Gialuron </a></strong>
+                    .&nbsp;Yo fui la primera voluntaria en participar en los ensayos
+                    clínicos.&nbsp;En ese momento, tenía 37 años y, por supuesto, ya
+                    tenía arrugas, manchas pigmentadas, etc.
+                  </p>
+									<img alt="" class="" height="549" loading="lazy" src="https://jovenyhermosa.live/lander/inno-gialuron---pe--17692--df/content/img/cont_3.jpg" width="976">
+									<figcaption class="">
+                    A los 47 años, Paula luce 20 años más joven gracias a una fórmula desarrollada por su marido dermatólogo
+                  </figcaption>
+                  <p>
+                    <strong>
+                      — ¿Quieres decir que tu marido desarrolló el producto
+                      especialmente para ti?
+                    </strong>
+                  </p>
+                  <p>
+                    — Al principio, sí.&nbsp;Al verme en el espejo, estaba más y más
+                    molesta con el paso de los días y seguía quejándome de que
+                    mi marido era dermatólogo y que no podía hacer nada por el
+                    marchitamiento de mi piel.&nbsp;Para mí, las inyecciones de
+                    belleza no eran una opción. Como esposa de un médico, era
+                    plenamente consciente de las consecuencias de insertar
+                    agentes químicos debajo de la piel.&nbsp;Además, tengo un miedo
+                    terrible a las agujas, así que la fórmula que desarrolló fue
+                    un acierto en la diana por varias razones: en primer lugar,
+                    porque tendría una mujer joven y linda, en segundo lugar,
+                    porque dejaría de quejarme a él y, en tercer lugar, porque
+                    era una especie de desafío: hacía tiempo que deseaba
+                    comenzar a desarrollar su propio producto porque en el
+                    mercado de los cosméticos no había nada que cumpliera
+                    plenamente con sus requisitos.
+                  </p>
+                  <p>
+                    <strong>
+                      — ¿El producto dio buenos resultados inmediatamente?
+                    </strong>
+                  </p>
+                  <p>
+                    — La fórmula fue probada y ajustada varias veces, pero los
+                    primeros resultados fueron muy reveladores solamente después
+                    de la segunda o tercera prueba.
+                    <span class="red-text">
+                      Me aplicaba la producto cada día durante un mes y, una
+                      bonita mañana, al mirarme en el espejo, me di cuenta de
+                      que mis arrugas habían desaparecido y que el tono de mi
+                      piel se había vuelto uniforme.&nbsp;Desde entonces, desde hace
+                      10 años, mi piel se ve como la ves.
+                    </span>
+                  </p>
+                  <p>
+                    <strong>
+                      — Dr. Orozco, cuéntenos cómo logró desarrollar una fórmula
+                      que da resultados tan notables y por qué casi nadie la
+                      conoce.
+                    </strong>
+                  </p>
+                  <p>
+                    — Para mí, como especialista, no hay nada complicado en esta
+                    fórmula: simplemente hay que saber cómo está construido el
+                    cuerpo humano y las funciones de la piel.&nbsp;En cuanto a su
+                    segunda pregunta, este producto es muy conocida: yo se la
+                    recomiendo a mis pacientes, y estos a sus amigos, etc. Pero
+                    debe tener en cuenta que el mercado moderno está lleno de
+                    productos cosméticos.&nbsp;Las grandes empresas invierten enormes
+                    cantidades de dinero en marketing y publicidad, y es
+                    imposible romper el ruido de información que generan.
+                  </p>
+                  <p>
+                    <strong>
+                      — Acaba de mencionar que hay que saber cómo funciona la
+                      piel humana.&nbsp;¿Puede explicarnos este proceso con palabras
+                      sencillas?
+                    </strong>
+                  </p>
+                  <p>
+                    — A partir de los 25 años, las personas comienzan a perder
+                    cada año aproximadamente el 1% del contenido de colágeno en
+                    la piel, que es uno de los "bloques de construcción" de la
+                    epidermis.&nbsp;Esto conduce a la desorganización de su
+                    estructura, es decir, la estructura de la piel se
+                    altera.&nbsp;Además, se ralentizan los procesos de regeneración
+                    de la piel y de todo el organismo. El nuevo material de
+                    construcción se fabrica en cantidades menores, mientras que
+                    el antiguo se descompone y no se restaura.&nbsp;Esto conduce a
+                    una pérdida de elasticidad y, por lo tanto, a la flacidez de
+                    la piel, a la pérdida de volumen y, finalmente, a la
+                    formación de arrugas profundas.
+                  </p>
+                  <p><strong> — ¿Y cómo funciona su fórmula? </strong></p>
+                  <p>
+                    — Si el cuerpo no puede producir colágeno, hay que
+                    ayudarle.&nbsp;Es por eso que la fórmula está enriquecida con
+                    colágeno adicional, pero como sabrá, el colágeno adicional
+                    solo afecta a las consecuencias del problema, y nosotros
+                    &ZeroWidthSpace;&ZeroWidthSpace;tenemos que lidiar con su causa: estimular la síntesis de
+                    nuevo colágeno y la acumulación de fibras de colágeno.
+                  </p>
+                  <p>
+                    Tardamos un tiempo para buscar la mejor solución y, en
+                    nuestra primera versión de la fórmula, usamos retinol.&nbsp;Sin
+                    embargo, los resultados de las pruebas mostraron que el
+                    retinol tiene muchos efectos secundarios: descamación de la
+                    piel, picazón, reacciones alérgicas, etc. Entonces,
+                    decidimos reemplazar el retinol por su análogo vegetal, el
+                    bakuchiol.
+                  </p>
+                  <p>
+                    Otros ensayos mostraron que el bakuchiol no solo estimula la
+                    liberación de colágeno, es decir, restaura la elasticidad de
+                    la piel y alisa las arrugas, sino que además suprime la
+                    liberación de melanina, responsable de la formación de las
+                    manchas pigmentadas.&nbsp;En algunos casos, gracias a sus
+                    propiedades antisépticas, elimina las imperfecciones de la
+                    piel y el acné.&nbsp;Fue entonces cuando nos dimos cuenta de que
+                    habíamos encontrado lo que necesitábamos.
+                  </p>
+                  <p>
+                    <strong>
+                      — ¿Hay otros ejemplos, además de su esposa, que puedan
+                      demostrar la eficacia de la fórmula?
+                    </strong>
+                  </p>
+                  <p>
+                    — Por supuesto.&nbsp;Paula fue la primera, pero después de hacer
+                    todas las pruebas de laboratorio, pusimos la producto en
+                    producción. Yo, por mi parte, comencé a recomendarla a mis
+                    pacientes, y ellos, a su vez, la recomendaban a familiares y
+                    amigos.
+                    <span class="red-text">
+                      Su experiencia ha demostrado que incluso las mujeres
+                      mayores de 65 años pueden deshacerse de las arrugas
+                      faciales, resolviendo el problema de la sequedad y la
+                      flacidez de la piel.
+                    </span>
+                  </p>
+									<img alt=""  height="649" loading="lazy" src="https://jovenyhermosa.live/lander/inno-gialuron---pe--17692--df/content/img/cont_5.jpg" width="976">
+									<img alt=""  height="649" loading="lazy" src="https://jovenyhermosa.live/lander/inno-gialuron---pe--17692--df/content/img/cont_6.jpg" width="976">
+									<img alt=""  height="649" loading="lazy" src="https://jovenyhermosa.live/lander/inno-gialuron---pe--17692--df/content/img/cont_7.jpg" width="976">
+									<img alt=""  height="649" loading="lazy" src="https://jovenyhermosa.live/lander/inno-gialuron---pe--17692--df/content/img/cont_8.jpg" width="976">
+									<figcaption class="">
+                    A los 47 años, Paula luce 20 años más joven gracias a una fórmula desarrollada por su marido dermatólogo
+                  </figcaption>
+                  <p>
+                    <strong>
+                      — Dice que los poderosos gigantes de productos cosméticos
+                      dificultan su entrada al mercado.&nbsp;¿Cómo se comercializa su
+                      producto?&nbsp;¿Dónde se puede comprar?
+                    </strong>
+                  </p>
+                  <p>
+                    — Por ahora, lamentablemente, solo se vende en nuestra web
+                    oficial.&nbsp;Esperamos que en el futuro podamos llegar a los
+                    estantes de las farmacias y tiendas mientras seguimos
+                    negociando, pero esta situación beneficia a los compradores:
+                    dado que la producto no se comercializa en nuestro país y no
+                    la publicitamos entre los consumidores como parte de un
+                    programa de marketing, a menudo llevamos a cabo promociones
+                    limitadas con descuentos.
+                  </p>
+                </article>
+		</div>
+	</main>
+
+	{% include '../includes/footer/footer.nunj' %}
+{% endblock %}
